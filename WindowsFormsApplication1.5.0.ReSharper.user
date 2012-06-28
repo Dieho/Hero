@@ -7,8 +7,49 @@
     </boolean>
   </SettingsComponent>
   <RecentFiles>
-    <RecentFiles />
-    <RecentEdits />
+    <RecentFiles>
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Generator/f:WorldGenerator.cs" caret="216" fromTop="10" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:ILive.cs" caret="198" fromTop="8" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:LandType/f:ILand.cs" caret="254" fromTop="10" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:LandType/f:LandType.cs" caret="737" fromTop="21" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:LandType/f:Mountain.cs" caret="414" fromTop="18" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Generator/f:Generator.cs" caret="805" fromTop="32" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:Monster.cs" caret="851" fromTop="35" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/f:HeroBuilder.cs" caret="783" fromTop="27" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/f:StartForm.cs" caret="662" fromTop="21" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Generator/f:Generator.cs" caret="155" fromTop="6" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Generator/f:Generator.cs" caret="805" fromTop="32" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:Monster.cs" caret="387" fromTop="13" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:ILive.cs" caret="290" fromTop="10" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:ILive.cs" caret="148" fromTop="6" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:Monster.cs" caret="297" fromTop="12" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:Monster.cs" caret="418" fromTop="18" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:Monster.cs" caret="549" fromTop="24" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:Monster.cs" caret="691" fromTop="30" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:Monster.cs" caret="851" fromTop="35" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/f:StartForm.cs" caret="1193" fromTop="30" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/f:StartForm.cs" caret="1413" fromTop="25" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Generator/f:WorldGenerator.cs" caret="245" fromTop="10" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Generator/f:WorldGenerator.cs" caret="216" fromTop="10" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:LandType/f:Mountain.cs" caret="211" fromTop="8" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:LandType/f:Mountain.cs" caret="288" fromTop="12" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:LandType/f:ILand.cs" caret="360" fromTop="12" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:LandType/f:ILand.cs" caret="174" fromTop="8" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:LandType/f:Mountain.cs" caret="354" fromTop="16" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:LandType/f:ILand.cs" caret="326" fromTop="12" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/f:StartForm.cs" caret="1592" fromTop="16" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/f:StartForm.cs" caret="1774" fromTop="27" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:LandType/f:LandType.cs" caret="541" fromTop="20" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:LandType/f:LandType.cs" caret="398" fromTop="16" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:LandType/f:LandType.cs" caret="181" fromTop="8" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:LandType/f:LandType.cs" caret="810" fromTop="24" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/f:StartForm.cs" caret="2028" fromTop="34" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/f:StartForm.cs" caret="268" fromTop="8" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/f:StartForm.cs" caret="901" fromTop="28" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/f:StartForm.cs" caret="457" fromTop="19" />
+    </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
     <NAntPath value="" />
@@ -21,4 +62,120 @@
     </NUnitInstallDir>
     <UseAddins>Never</UseAddins>
   </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="Drawing2D" priority="0" />
+      <Item value="private" priority="7" />
+      <Item value="int" priority="16" />
+      <Item value="public" priority="7" />
+      <Item value="HeroBuilder`0" priority="15" />
+      <Item value="struct" priority="2" />
+      <Item value="HeroStat`0" priority="7" />
+      <Item value="switch" priority="1" />
+      <Item value="case" priority="3" />
+      <Item value="type" priority="0" />
+      <Item value="static" priority="3" />
+      <Item value="break" priority="1" />
+      <Item value="return" priority="12" />
+      <Item value="MP" priority="0" />
+      <Item value="Damage" priority="0" />
+      <Item value="Def" priority="0" />
+      <Item value="EnvironmentVariableTarget`0" priority="0" />
+      <Item value="panel1" priority="1" />
+      <Item value="false" priority="1" />
+      <Item value="if" priority="0" />
+      <Item value="hero" priority="0" />
+      <Item value="null" priority="0" />
+      <Item value="else" priority="0" />
+      <Item value="panel2" priority="0" />
+      <Item value="true" priority="0" />
+      <Item value="IWorldGenerator`0" priority="9" />
+      <Item value="set" priority="0" />
+      <Item value="Random`0" priority="0" />
+      <Item value="MonsterGenerator`0" priority="0" />
+      <Item value="interface" priority="1" />
+      <Item value="STAThreadAttribute`0" priority="0" />
+      <Item value="AppDomainSetup`0" priority="0" />
+      <Item value="String`0" priority="1" />
+      <Item value="string" priority="7" />
+      <Item value="ILive`0" priority="1" />
+      <Item value="void" priority="3" />
+      <Item value="new" priority="15" />
+      <Item value="MonsterType" priority="1" />
+      <Item value="this" priority="2" />
+      <Item value="MonsterPosition" priority="1" />
+      <Item value="var" priority="5" />
+      <Item value="Generator" priority="1" />
+      <Item value="Generator`0" priority="0" />
+      <Item value="GenerateWorld`0" priority="0" />
+      <Item value="Type`0" priority="0" />
+      <Item value="Clone`0" priority="0" />
+      <Item value="Name" priority="1" />
+      <Item value="name" priority="0" />
+      <Item value="value" priority="2" />
+      <Item value="stat" priority="1" />
+      <Item value="agression" priority="1" />
+      <Item value="Monster`0" priority="2" />
+      <Item value="a" priority="0" />
+      <Item value="Stat" priority="0" />
+      <Item value="b" priority="0" />
+      <Item value="Agression" priority="0" />
+      <Item value="c" priority="0" />
+      <Item value="MessageBox`0" priority="0" />
+      <Item value="asd" priority="1" />
+      <Item value="List" priority="1" />
+      <Item value="List&lt;Stat&gt;" priority="0" />
+      <Item value="Live" priority="2" />
+      <Item value="Dictionary" priority="0" />
+      <Item value="Dictionary&lt;string,Stat&gt;" priority="0" />
+      <Item value="class" priority="0" />
+      <Item value="LandType" priority="0" />
+      <Item value="ILand`0" priority="3" />
+      <Item value="_name" priority="0" />
+      <Item value="land`0" priority="0" />
+      <Item value="Land`0" priority="4" />
+      <Item value="Mountain`0" priority="0" />
+      <Item value="land" priority="1" />
+      <Item value="CreateLand`0" priority="0" />
+      <Item value="Land" priority="0" />
+      <Item value="_hero" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@WindowsFormsApplication1.HeroBuilder">
+      <Item value="Builder`0" priority="3" />
+      <Item value="HeroStat`0" priority="0" />
+      <Item value="MonsterBuilder`0" priority="2" />
+      <Item value="Stat`0" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.Panel">
+      <Item value="Visible" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WindowsFormsApplication1.IWorldGenerator">
+      <Item value="MonsterGenerator`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WindowsFormsApplication1.Generator.Generator">
+      <Item value="MonsterGenerator`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WindowsFormsApplication1.MonsterType.Monster">
+      <Item value="SetMonster`0" priority="0" />
+      <Item value="Stat" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Add`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.Dictionary`2">
+      <Item value="Add`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@WindowsFormsApplication1.LandType.LandType+Land">
+      <Item value="name" priority="0" />
+      <Item value="forest" priority="1" />
+      <Item value="mountain" priority="0" />
+      <Item value="water" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WindowsFormsApplication1.LandType.Mountain">
+      <Item value="name" priority="0" />
+      <Item value="mountain" priority="0" />
+      <Item value="forest" priority="1" />
+      <Item value="water" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
 </Configuration>

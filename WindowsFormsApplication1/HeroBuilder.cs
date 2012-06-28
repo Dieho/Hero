@@ -42,7 +42,7 @@ namespace WindowsFormsApplication1
             return new Stat();
         }
 
-        public Stat Builder(int HP,int MP,int Damage,int Def)
+        public static Stat Builder(int HP,int MP,int Damage,int Def)
         {
 
                     Stat.HP = HP;
