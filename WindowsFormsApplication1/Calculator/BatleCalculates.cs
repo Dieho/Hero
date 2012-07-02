@@ -11,7 +11,7 @@ namespace WindowsFormsApplication1.Calculator
 
         public bool ChanceToHit(ILive first)
         {
-            Random rand = new Random();
+            var rand = new Random();
             double chanceToHit = rand.NextDouble();
             switch (first.Type)
             {
