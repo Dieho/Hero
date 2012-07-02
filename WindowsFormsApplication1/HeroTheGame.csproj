@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Batle\Fight.cs" />
     <Compile Include="Batle\IBatle.cs" />
+    <Compile Include="Calculator\BatleCalculates.cs" />
     <Compile Include="Generator\Generator.cs" />
     <Compile Include="LandType\ILand.cs" />
     <Compile Include="LandType\LandType.cs" />

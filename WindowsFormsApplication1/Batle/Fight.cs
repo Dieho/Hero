@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using WindowsFormsApplication1.Calculator;
 using WindowsFormsApplication1.MonsterType;
 
 namespace WindowsFormsApplication1.Batle
@@ -23,10 +24,16 @@ namespace WindowsFormsApplication1.Batle
             set { _second = value; }
         }
 
-        public void Kick(ILive _first,ILive _second,int power)
+        public void Kick(ILive first,ILive second)
         {
-            _first.HP = _first.HP - power; //Test
-            //ToDO: Calculate Kick (or punch :) power with checking defence
+            BatleCalculates batleRandom=new BatleCalculates();
+            bool chance = batleRandom.ChanceToHit(first);
+            if(chance)
+            second.HP = second.HP -first.Damage/second.Def ;
+            chance = batleRandom.ChanceToHit(second);
+            if (chance)
+            first.HP = first.HP - second.Damage / first.Def;
+            
         }
     }
 }

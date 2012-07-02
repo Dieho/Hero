@@ -17,32 +17,32 @@ namespace WindowsFormsApplication1.MonsterType
             set { name = value; }
         }
 
-        public int HP
+        public float HP
         {
             get { throw new NotImplementedException(); }
             set { throw new NotImplementedException(); }
         }
 
-        public int MP
+        public float MP
         {
             get { throw new NotImplementedException(); }
             set { throw new NotImplementedException(); }
         }
 
-        public int Damage
+        public float Damage
         {
             get { throw new NotImplementedException(); }
             set { throw new NotImplementedException(); }
         }
 
-        public int Def
+        public float Def
         {
             get { throw new NotImplementedException(); }
             set { throw new NotImplementedException(); }
         }
 
 
-        public string Agression
+        public string Type
         {
             get { return agression; }
             set { agression=value; }

@@ -10,10 +10,10 @@ namespace WindowsFormsApplication1.MonsterType
         protected string _name;
         protected HeroBuilder.Stat _stat;
         protected string _agression;
-        protected int _HP;
-        protected int _MP;
-        protected int _Damage;
-        protected int _Def; 
+        protected float _HP;
+        protected float _MP;
+        protected float _Damage;
+        protected float _Def; 
 
         public string Name
         {
@@ -21,31 +21,31 @@ namespace WindowsFormsApplication1.MonsterType
             set { _name = value; }
         }
 
-        public int HP
+        public float HP
         {
             get { return _HP; }
             set { _HP = value; }
         }
 
-        public int MP
+        public float MP
         {
             get { return _MP; }
             set { _MP = value; }
         }
 
-        public int Damage
+        public float Damage
         {
             get { return _Damage; }
             set { _Damage = value; }
         }
 
-        public int Def
+        public float Def
         {
             get { return _Def; }
             set { _Def = value; }
         }
 
-        public string Agression
+        public string Type
         {
             get { return _agression; }
             set { _agression = value; }

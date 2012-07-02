@@ -9,46 +9,51 @@
   <RecentFiles>
     <RecentFiles>
       <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Generator/f:WorldGenerator.cs" caret="216" fromTop="10" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:ILive.cs" caret="198" fromTop="8" />
       <File id="120345C2-565B-4D57-AD24-45962E232B20/d:LandType/f:ILand.cs" caret="254" fromTop="10" />
       <File id="120345C2-565B-4D57-AD24-45962E232B20/d:LandType/f:LandType.cs" caret="737" fromTop="21" />
       <File id="120345C2-565B-4D57-AD24-45962E232B20/d:LandType/f:Mountain.cs" caret="414" fromTop="18" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Batle/f:IBatle.cs" caret="285" fromTop="10" />
       <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Generator/f:Generator.cs" caret="805" fromTop="32" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:Monster.cs" caret="851" fromTop="35" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/f:HeroBuilder.cs" caret="783" fromTop="27" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/f:StartForm.cs" caret="662" fromTop="21" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/f:HeroBuilder.cs" caret="349" fromTop="10" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:HeroDefender.cs" caret="178" fromTop="7" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:ILive.cs" caret="310" fromTop="11" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:Monster.cs" caret="1069" fromTop="30" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/f:StartForm.Designer.cs" caret="625" fromTop="17" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Batle/f:Fight.cs" caret="650" fromTop="27" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Calculator/f:BatleCalculates.cs" caret="420" fromTop="12" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/f:StartForm.cs" caret="841" fromTop="28" />
     </RecentFiles>
     <RecentEdits>
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Generator/f:Generator.cs" caret="155" fromTop="6" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Generator/f:Generator.cs" caret="805" fromTop="32" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:Monster.cs" caret="387" fromTop="13" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:ILive.cs" caret="290" fromTop="10" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:ILive.cs" caret="148" fromTop="6" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:Monster.cs" caret="297" fromTop="12" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:Monster.cs" caret="418" fromTop="18" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:Monster.cs" caret="549" fromTop="24" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:Monster.cs" caret="691" fromTop="30" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:Monster.cs" caret="851" fromTop="35" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/f:StartForm.cs" caret="1193" fromTop="30" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/f:StartForm.cs" caret="1413" fromTop="25" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Generator/f:WorldGenerator.cs" caret="245" fromTop="10" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Generator/f:WorldGenerator.cs" caret="216" fromTop="10" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:LandType/f:Mountain.cs" caret="211" fromTop="8" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:LandType/f:Mountain.cs" caret="288" fromTop="12" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:LandType/f:ILand.cs" caret="360" fromTop="12" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:LandType/f:ILand.cs" caret="174" fromTop="8" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:LandType/f:Mountain.cs" caret="354" fromTop="16" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:LandType/f:ILand.cs" caret="326" fromTop="12" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/f:StartForm.cs" caret="1592" fromTop="16" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/f:StartForm.cs" caret="1774" fromTop="27" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:LandType/f:LandType.cs" caret="541" fromTop="20" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:LandType/f:LandType.cs" caret="398" fromTop="16" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:LandType/f:LandType.cs" caret="181" fromTop="8" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:LandType/f:LandType.cs" caret="810" fromTop="24" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/f:StartForm.cs" caret="2028" fromTop="34" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/f:StartForm.cs" caret="268" fromTop="8" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/f:StartForm.cs" caret="901" fromTop="28" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/f:StartForm.cs" caret="457" fromTop="19" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/f:StartForm.cs" caret="3019" fromTop="32" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:HeroDefender.cs" caret="411" fromTop="14" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:HeroDefender.cs" caret="565" fromTop="22" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:HeroDefender.cs" caret="681" fromTop="28" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:HeroDefender.cs" caret="797" fromTop="34" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:HeroDefender.cs" caret="925" fromTop="28" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:Monster.cs" caret="424" fromTop="18" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:Monster.cs" caret="589" fromTop="24" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:Monster.cs" caret="754" fromTop="30" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:Monster.cs" caret="923" fromTop="36" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/f:StartForm.cs" caret="2038" fromTop="32" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/f:StartForm.cs" caret="741" fromTop="14" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/f:StartForm.cs" caret="2395" fromTop="34" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/f:StartForm.cs" caret="2657" fromTop="26" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:Monster.cs" caret="1097" fromTop="31" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:HeroDefender.cs" caret="1050" fromTop="25" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Batle/f:Fight.cs" caret="1001" fromTop="28" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Calculator/f:BatleCalculates.cs" caret="292" fromTop="16" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Calculator/f:BatleCalculates.cs" caret="1019" fromTop="13" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Calculator/f:BatleCalculates.cs" caret="1019" fromTop="19" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Calculator/f:BatleCalculates.cs" caret="968" fromTop="24" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Calculator/f:BatleCalculates.cs" caret="921" fromTop="22" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Batle/f:Fight.cs" caret="898" fromTop="30" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Batle/f:Fight.cs" caret="893" fromTop="30" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:ILive.cs" caret="354" fromTop="13" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Batle/f:Fight.cs" caret="924" fromTop="32" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/f:StartForm.cs" caret="1264" fromTop="21" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Batle/f:Fight.cs" caret="977" fromTop="33" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Calculator/f:BatleCalculates.cs" caret="1008" fromTop="25" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Calculator/f:BatleCalculates.cs" caret="915" fromTop="22" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -65,44 +70,44 @@
   <CompletionStatisticsManager>
     <ItemStatistics item="Default">
       <Item value="Drawing2D" priority="0" />
-      <Item value="private" priority="7" />
-      <Item value="int" priority="16" />
-      <Item value="public" priority="7" />
-      <Item value="HeroBuilder`0" priority="15" />
+      <Item value="private" priority="11" />
+      <Item value="int" priority="22" />
+      <Item value="public" priority="14" />
+      <Item value="HeroBuilder`0" priority="19" />
       <Item value="struct" priority="2" />
       <Item value="HeroStat`0" priority="7" />
-      <Item value="switch" priority="1" />
-      <Item value="case" priority="3" />
+      <Item value="switch" priority="2" />
+      <Item value="case" priority="5" />
       <Item value="type" priority="0" />
       <Item value="static" priority="3" />
-      <Item value="break" priority="1" />
-      <Item value="return" priority="12" />
+      <Item value="break" priority="5" />
+      <Item value="return" priority="19" />
       <Item value="MP" priority="0" />
       <Item value="Damage" priority="0" />
-      <Item value="Def" priority="0" />
+      <Item value="Def" priority="2" />
       <Item value="EnvironmentVariableTarget`0" priority="0" />
       <Item value="panel1" priority="1" />
       <Item value="false" priority="1" />
-      <Item value="if" priority="0" />
-      <Item value="hero" priority="0" />
+      <Item value="if" priority="4" />
+      <Item value="hero" priority="4" />
       <Item value="null" priority="0" />
       <Item value="else" priority="0" />
       <Item value="panel2" priority="0" />
-      <Item value="true" priority="0" />
+      <Item value="true" priority="2" />
       <Item value="IWorldGenerator`0" priority="9" />
       <Item value="set" priority="0" />
-      <Item value="Random`0" priority="0" />
+      <Item value="Random`0" priority="3" />
       <Item value="MonsterGenerator`0" priority="0" />
-      <Item value="interface" priority="1" />
+      <Item value="interface" priority="3" />
       <Item value="STAThreadAttribute`0" priority="0" />
       <Item value="AppDomainSetup`0" priority="0" />
       <Item value="String`0" priority="1" />
-      <Item value="string" priority="7" />
-      <Item value="ILive`0" priority="1" />
-      <Item value="void" priority="3" />
-      <Item value="new" priority="15" />
+      <Item value="string" priority="11" />
+      <Item value="ILive`0" priority="9" />
+      <Item value="void" priority="5" />
+      <Item value="new" priority="21" />
       <Item value="MonsterType" priority="1" />
-      <Item value="this" priority="2" />
+      <Item value="this" priority="3" />
       <Item value="MonsterPosition" priority="1" />
       <Item value="var" priority="5" />
       <Item value="Generator" priority="1" />
@@ -111,18 +116,18 @@
       <Item value="Type`0" priority="0" />
       <Item value="Clone`0" priority="0" />
       <Item value="Name" priority="1" />
-      <Item value="name" priority="0" />
-      <Item value="value" priority="2" />
-      <Item value="stat" priority="1" />
-      <Item value="agression" priority="1" />
+      <Item value="name" priority="1" />
+      <Item value="value" priority="5" />
+      <Item value="stat" priority="2" />
+      <Item value="agression" priority="2" />
       <Item value="Monster`0" priority="2" />
       <Item value="a" priority="0" />
-      <Item value="Stat" priority="0" />
+      <Item value="Stat" priority="1" />
       <Item value="b" priority="0" />
       <Item value="Agression" priority="0" />
       <Item value="c" priority="0" />
       <Item value="MessageBox`0" priority="0" />
-      <Item value="asd" priority="1" />
+      <Item value="asd" priority="9" />
       <Item value="List" priority="1" />
       <Item value="List&lt;Stat&gt;" priority="0" />
       <Item value="Live" priority="2" />
@@ -131,7 +136,7 @@
       <Item value="class" priority="0" />
       <Item value="LandType" priority="0" />
       <Item value="ILand`0" priority="3" />
-      <Item value="_name" priority="0" />
+      <Item value="_name" priority="3" />
       <Item value="land`0" priority="0" />
       <Item value="Land`0" priority="4" />
       <Item value="Mountain`0" priority="0" />
@@ -139,12 +144,40 @@
       <Item value="CreateLand`0" priority="0" />
       <Item value="Land" priority="0" />
       <Item value="_hero" priority="0" />
+      <Item value="protected" priority="4" />
+      <Item value="_stat" priority="2" />
+      <Item value="HeroDefender`0" priority="5" />
+      <Item value="_agression" priority="0" />
+      <Item value="_HP" priority="0" />
+      <Item value="hp" priority="0" />
+      <Item value="_MP" priority="0" />
+      <Item value="mp" priority="0" />
+      <Item value="_Damage" priority="0" />
+      <Item value="damage" priority="0" />
+      <Item value="_Def" priority="0" />
+      <Item value="def" priority="0" />
+      <Item value="IAsyncResult`0" priority="0" />
+      <Item value="IBatle`0" priority="0" />
+      <Item value="_first" priority="5" />
+      <Item value="Fight`0" priority="0" />
+      <Item value="Fight" priority="0" />
+      <Item value="hero2" priority="2" />
+      <Item value="richTextBox1" priority="1" />
+      <Item value="_second" priority="1" />
+      <Item value="hero3" priority="0" />
+      <Item value="first" priority="0" />
+      <Item value="Random" priority="1" />
+      <Item value="rand" priority="1" />
+      <Item value="float" priority="0" />
+      <Item value="BatleCalculates" priority="0" />
+      <Item value="Second" priority="0" />
+      <Item value="chance" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@WindowsFormsApplication1.HeroBuilder">
-      <Item value="Builder`0" priority="3" />
+      <Item value="Builder`0" priority="4" />
       <Item value="HeroStat`0" priority="0" />
       <Item value="MonsterBuilder`0" priority="2" />
-      <Item value="Stat`0" priority="3" />
+      <Item value="Stat`0" priority="5" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Windows.Forms.Panel">
       <Item value="Visible" priority="2" />
@@ -176,6 +209,32 @@
       <Item value="mountain" priority="0" />
       <Item value="forest" priority="1" />
       <Item value="water" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WindowsFormsApplication1.MonsterType.HeroDefender">
+      <Item value="SetHero`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WindowsFormsApplication1.MonsterType.ILive">
+      <Item value="HP" priority="3" />
+      <Item value="Damage" priority="0" />
+      <Item value="Def" priority="0" />
+      <Item value="Name" priority="1" />
+      <Item value="Type" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WindowsFormsApplication1.Batle.Fight">
+      <Item value="First" priority="0" />
+      <Item value="Kick`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.RichTextBox">
+      <Item value="Text" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Int32">
+      <Item value="ToString`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Random">
+      <Item value="NextDouble`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WindowsFormsApplication1.Calculator.BatleCalculates">
+      <Item value="ChanceToHit`0" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>
