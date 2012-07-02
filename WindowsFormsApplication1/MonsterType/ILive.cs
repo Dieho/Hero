@@ -5,10 +5,13 @@ using System.Text;
 
 namespace WindowsFormsApplication1.MonsterType
 {
-     interface ILive
+   public interface ILive
     {
         String Name { get; set; }
-        HeroBuilder.Stat Stat { get; set; }
+        int HP { get; set; }
+        int MP { get; set; }
+        int Damage { get; set; }
+        int Def { get; set; }
         String Agression { get; set; }
-    } 
+    }
 }

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace WindowsFormsApplication1
 {
-    class HeroBuilder
+   public class HeroBuilder
     {
         public struct Stat
         {
@@ -14,7 +14,6 @@ namespace WindowsFormsApplication1
             public static int Damage;
             public static int Def;
         }
-
 
         public static Stat Builder(int type)
         {
@@ -79,4 +78,5 @@ namespace WindowsFormsApplication1
             return new Stat();
         }
     }
+
 }

@@ -17,11 +17,30 @@ namespace WindowsFormsApplication1.MonsterType
             set { name = value; }
         }
 
-        public HeroBuilder.Stat Stat
+        public int HP
         {
-            get { return stat; }
-            set { stat = value; }
+            get { throw new NotImplementedException(); }
+            set { throw new NotImplementedException(); }
         }
+
+        public int MP
+        {
+            get { throw new NotImplementedException(); }
+            set { throw new NotImplementedException(); }
+        }
+
+        public int Damage
+        {
+            get { throw new NotImplementedException(); }
+            set { throw new NotImplementedException(); }
+        }
+
+        public int Def
+        {
+            get { throw new NotImplementedException(); }
+            set { throw new NotImplementedException(); }
+        }
+
 
         public string Agression
         {
@@ -29,12 +48,12 @@ namespace WindowsFormsApplication1.MonsterType
             set { agression=value; }
         }
 
-        public Monster SetMonster(string a,HeroBuilder.Stat b,string c)
-        {
-            Name = a;
-            Stat = b;
-            Agression = c;
-            return this;
-        }
+        //public Monster SetMonster(string a,HeroBuilder.Stat b,string c)
+        //{
+        //    Name = a;
+        //    Stat = b;
+        //    Agression = c;
+        //    return this;
+        //}
     }
 }
