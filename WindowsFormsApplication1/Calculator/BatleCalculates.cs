@@ -8,7 +8,11 @@ namespace WindowsFormsApplication1.Calculator
 {
     class BatleCalculates
     {
-
+        /// <summary>
+        /// OK
+        /// </summary>
+        /// <param name="first"></param>
+        /// <returns></returns>
         public bool ChanceToHit(ILive first)
         {
             var rand = new Random();
