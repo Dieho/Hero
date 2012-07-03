@@ -53,7 +53,7 @@
     <Compile Include="LandType\ILand.cs" />
     <Compile Include="LandType\LandType.cs" />
     <Compile Include="LandType\Mountain.cs" />
-    <Compile Include="MonsterType\HeroDefender.cs" />
+    <Compile Include="MonsterType\Hero.cs" />
     <Compile Include="MonsterType\ILive.cs" />
     <Compile Include="MonsterType\Monster.cs" />
     <Compile Include="StartForm.cs">

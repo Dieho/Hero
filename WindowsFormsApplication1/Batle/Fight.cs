@@ -26,14 +26,23 @@ namespace WindowsFormsApplication1.Batle
 
         public void Kick(ILive first,ILive second)
         {
-            BatleCalculates batleRandom=new BatleCalculates();
-            bool chance = batleRandom.ChanceToHit(first);
-            if(chance)
-            second.HP = second.HP -first.Damage/second.Def ;
-            chance = batleRandom.ChanceToHit(second);
-            if (chance)
-            first.HP = first.HP - second.Damage / first.Def;
-            
+            BatleCalculates batleRandom = new BatleCalculates();
+            if (first.HP>0&&second.HP>0)
+            {
+                bool chance = batleRandom.ChanceToHit(first);
+                if (chance)
+                    second.HP = second.HP - first.Damage / second.Def;
+                if (first.HP > 0 && second.HP > 0)
+                {
+                    chance = batleRandom.ChanceToHit(second);
+
+                    if (chance)
+                        first.HP = first.HP - second.Damage / first.Def;
+                }
+            }
+           
         }
+
     }
+    
 }
