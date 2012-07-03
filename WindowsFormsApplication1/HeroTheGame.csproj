@@ -50,9 +50,12 @@
     <Compile Include="Batle\IBatle.cs" />
     <Compile Include="Calculator\BatleCalculates.cs" />
     <Compile Include="Generator\Generator.cs" />
+    <Compile Include="LandType\Ground.cs" />
     <Compile Include="LandType\ILand.cs" />
-    <Compile Include="LandType\LandType.cs" />
+    <Compile Include="LandType\MapPart.cs" />
     <Compile Include="LandType\Mountain.cs" />
+    <Compile Include="LandType\Water.cs" />
+    <Compile Include="LandType\WorldMap.cs" />
     <Compile Include="MonsterType\Hero.cs" />
     <Compile Include="MonsterType\ILive.cs" />
     <Compile Include="MonsterType\Monster.cs" />

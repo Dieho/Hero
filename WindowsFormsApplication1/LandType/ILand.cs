@@ -5,14 +5,8 @@ using System.Text;
 
 namespace WindowsFormsApplication1.LandType
 {
-    interface ILand
+    public interface ILand
     {
-      
-            String name    { get; }
-            int    mountain { get; set; }
-            int    forest   { get; set; }
-            int    water    { get; set; }
-        
-        
+        string Name { get; set; }        
     }
 }

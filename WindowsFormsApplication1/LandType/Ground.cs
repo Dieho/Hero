@@ -5,13 +5,13 @@ using System.Text;
 
 namespace WindowsFormsApplication1.LandType
 {
-    public class Mountain : ILand
+    public class Ground : ILand
     {
         public string Name { get; set; }
 
         public override string ToString()
         {
-            return "Гора";
+            return "Суша";
         }
     }
 }

@@ -7,6 +7,8 @@ namespace WindowsFormsApplication1
 {
     class WorldGenerator
     {
+        //private LandType.ILand[,] Map;
 
+        //public void NewWorld
     }
 }
