@@ -32,22 +32,25 @@ namespace WindowsFormsApplication1
         private void button4_Click(object sender, EventArgs e)
         {
             Fight f=new Fight();
-            f.Kick(Warrior, DD);
-            richTextBox1.Text = richTextBox1.Text + " \n" + Warrior.Name + " - " + Warrior.HP.ToString() + " - " + DD.Name + " " + DD.HP.ToString();
+            string result;
+            result=f.Kick(Warrior, DD);
+            richTextBox1.Text = richTextBox1.Text + " \n" + Warrior.Name + " - " + Warrior.HP.ToString() + " - " + DD.Name + " " + DD.HP.ToString() + "\n" + result;
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
             Fight f = new Fight();
-            f.Kick(Warrior, Wizard);
-            richTextBox1.Text = richTextBox1.Text + " \n" + Warrior.Name + " - " + Warrior.HP.ToString() + " - " + Wizard.Name + " " + Wizard.HP.ToString();
+            string result;
+            result=f.Kick(Warrior, Wizard);
+            richTextBox1.Text = richTextBox1.Text + " \n" + Warrior.Name + " - " + Warrior.HP.ToString() + " - " + Wizard.Name + " " + Wizard.HP.ToString() + "\n" + result;
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             Fight f = new Fight();
-            f.Kick(DD, Wizard);
-            richTextBox1.Text = richTextBox1.Text + " \n" + DD.Name + " - " + DD.HP.ToString() + " - " + Wizard.Name + " " + Wizard.HP.ToString();
+            string result;
+            result=f.Kick(DD, Wizard);
+            richTextBox1.Text = richTextBox1.Text + " \n" + DD.Name + " - " + DD.HP.ToString() + " - " + Wizard.Name + " " + Wizard.HP.ToString()+"\n" +result;
         }
 
         public void GenerateWorld()
