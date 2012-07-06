@@ -48,6 +48,24 @@ namespace WindowsFormsApplication1.MonsterType
             set { agression=value; }
         }
 
+        public int experience
+        {
+            get { throw new NotImplementedException(); }
+            set { throw new NotImplementedException(); }
+        }
+
+        public int experienceToLvl
+        {
+            get { throw new NotImplementedException(); }
+            set { throw new NotImplementedException(); }
+        }
+
+        public int Lvl
+        {
+            get { throw new NotImplementedException(); }
+            set { throw new NotImplementedException(); }
+        }
+
         //public Monster SetMonster(string a,HeroBuilder.Stat b,string c)
         //{
         //    Name = a;

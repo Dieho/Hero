@@ -13,6 +13,9 @@ namespace WindowsFormsApplication1.MonsterType
         protected float _MP;
         protected float _Damage;
         protected float _Def;
+        protected int _experience;
+        protected int _experienceToLvl;
+        protected int _Lvl;
 
         public string Name
         {
@@ -50,8 +53,26 @@ namespace WindowsFormsApplication1.MonsterType
             set { _agression = value; }
         }
 
+        public int experience
+        {
+            get { return _experience; }
+            set { _experience = value; }
+        }
+
+        public int experienceToLvl
+        {
+            get { return _experienceToLvl; }
+            set { _experienceToLvl = value; }
+        }
+
+        public int Lvl
+        {
+            get { return _Lvl; }
+            set { _Lvl = value; }
+        }
+
         #region DDBuild
-        public Hero SetDD(string name, int hp, int mp, int damage, int def, string agression)
+        public Hero SetDD(string name, int hp, int mp, int damage, int def, string agression, int  Experience, int ExperienceToLvl, int Lvl)
         {
             _name = name;
             _HP = hp;
@@ -59,6 +80,9 @@ namespace WindowsFormsApplication1.MonsterType
             _Damage = damage;
             _Def = def;
             _agression = agression;
+            _experience = Experience;
+            _experienceToLvl = ExperienceToLvl;
+            _Lvl = Lvl;
             return this;
         }
 
@@ -70,7 +94,12 @@ namespace WindowsFormsApplication1.MonsterType
             _Damage = 10;
             _Def = 5;
             _agression = "DD";
-            return this;
+            _Lvl = Lvl;
+            _experience = 0;
+
+            //   _experienceToLvl =(x)=>x>1? ;
+
+                return this;
         }
         #endregion
 
@@ -83,6 +112,7 @@ namespace WindowsFormsApplication1.MonsterType
             _Damage = damage;
             _Def = def;
             _agression = agression;
+            _experience = 0;
             return this;
         }
 
@@ -94,6 +124,7 @@ namespace WindowsFormsApplication1.MonsterType
             _Damage = 5;
             _Def = 7;
             _agression = "Defender";
+            _experience = 0;
             return this;
         }
         #endregion
@@ -121,6 +152,19 @@ namespace WindowsFormsApplication1.MonsterType
             return this;
         }
         #endregion
+
+        public int[] NextLvl(int size)
+        {
+            int[] Lvl=new int[size];
+            Lvl[1] = 100;
+            Func<double, double> asd = null;
+            asd = (x) => x > 1 ? asd(x - 1) + 0.5 * asd(x - 1) : x;
+            for (int i = 2; i < size; i++)
+            {
+                Lvl[i] = (int)(asd(i) * 100);
+            }
+            return Lvl;
+        }
 
     }
 }

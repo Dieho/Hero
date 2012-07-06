@@ -127,12 +127,6 @@ namespace WindowsFormsApplication1
             comboBox1.Enabled = true;
             comboBox2.Enabled = true;
             button3.Enabled = true;
-
-
-
-            //var asd = new Generator.Generator().MonsterGenerator(1);
-            // var asd = new Monster().SetMonster("asd", HeroBuilder.MonsterBuilder(1), "zxc");
-            // Live.Add("Monster", asd.Stat);
         }
 
 
@@ -147,12 +141,27 @@ namespace WindowsFormsApplication1
             {
                 for (int j = 0; j < 10; j++)
                 {
-                    sb.Append(string.Format("{0}\t",part[i, j]));
+                    sb.Append(string.Format("{0}\t", part[i, j]));
                 }
                 sb.Append("\n");
             }
 
             richTextBox1.Text += sb.ToString();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            var ololo = DateTime.Now;
+            Hero asd=new Hero();
+            foreach(var i in asd.NextLvl(35))
+            {
+                richTextBox1.Text += i.ToString() + "\n";
+            }
+            var ololo2 = DateTime.Now;
+            TimeSpan a=new TimeSpan();
+            a = ololo2 - ololo;
+            richTextBox1.Text += a.Seconds.ToString();
+
         }
     }
 }

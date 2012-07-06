@@ -48,6 +48,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tbColumns = new System.Windows.Forms.TextBox();
             this.tbLines = new System.Windows.Forms.TextBox();
+            this.button7 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -115,6 +116,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button7);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.panel2);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
@@ -254,6 +256,16 @@
             this.tbLines.TabIndex = 2;
             this.tbLines.Text = "10";
             // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(187, 86);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(75, 23);
+            this.button7.TabIndex = 6;
+            this.button7.Text = "Уровни";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
             // StartForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -300,6 +312,7 @@
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button7;
     }
 }
 
