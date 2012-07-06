@@ -28,7 +28,7 @@ namespace WindowsFormsApplication1.Batle
         {
             BatleCalculates batleRandom = new BatleCalculates();
             string result = "";
-            if (first.HP > 0 && second.HP > 0)
+            if (first.HPCurent > 0 && second.HPCurent > 0)
             {
                 bool chance = batleRandom.ChanceToHit(first);
                 if (!chance)
@@ -37,9 +37,9 @@ namespace WindowsFormsApplication1.Batle
                 }
                 else
                 {
-                    second.HP = second.HP - batleRandom.Damage(first) / second.Def;
+                    second.HPCurent = second.HPCurent - batleRandom.Damage(first) / second.DefCurent;
                 }
-                if (first.HP > 0 && second.HP > 0)
+                if (first.HPCurent > 0 && second.HPCurent > 0)
                 {
                     chance = batleRandom.ChanceToHit(second);
 
@@ -47,20 +47,22 @@ namespace WindowsFormsApplication1.Batle
                         result += "He MISS!Ha-Ha";
                     else
                     {
-                        first.HP = first.HP - batleRandom.Damage(second) / first.Def;
+                        first.HPCurent = first.HPCurent - batleRandom.Damage(second) / first.DefCurent;
                     }
                 }
             }
 
-            if (first.HP <= 0)
+            if (first.HPCurent <= 0)
             {
-                first.HP = 0;
+                first.HPCurent = 0;
                 result += "You are dead!:(";
+                batleRandom.Experience(second, first);
             }
-            if (second.HP <= 0)
+            if (second.HPCurent <= 0)
             {
-                second.HP = 0;
+                second.HPCurent = 0;
                 result += "He is dead!:)";
+                batleRandom.Experience( first,second);
             }
 
             return result;

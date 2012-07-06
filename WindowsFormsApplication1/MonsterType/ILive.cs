@@ -12,6 +12,10 @@ namespace WindowsFormsApplication1.MonsterType
         float MP { get; set; }
         float Damage { get; set; }
         float Def { get; set; }
+        float HPCurent { get; set; }
+        float MPCurent { get; set; }
+        float DamageCurent { get; set; }
+        float DefCurent { get; set; }
         string Type { get; set; }
         int experience { get; set; }
         int experienceToLvl { get; set; }

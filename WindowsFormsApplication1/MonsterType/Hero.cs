@@ -13,6 +13,10 @@ namespace WindowsFormsApplication1.MonsterType
         protected float _MP;
         protected float _Damage;
         protected float _Def;
+        protected float _HPCurent;
+        protected float _MPCurent;
+        protected float _DamageCurent;
+        protected float _DefCurent;
         protected int _experience;
         protected int _experienceToLvl;
         protected int _Lvl;
@@ -47,6 +51,30 @@ namespace WindowsFormsApplication1.MonsterType
             set { _Def = value; }
         }
 
+        public float HPCurent
+        {
+            get { return _HPCurent; }
+            set { _HPCurent = value; }
+        }
+
+        public float MPCurent
+        {
+            get { return _MPCurent; }
+            set { _MPCurent = value; }
+        }
+
+        public float DamageCurent
+        {
+            get { return _DamageCurent; }
+            set { _DamageCurent = value; }
+        }
+
+        public float DefCurent
+        {
+            get { return _DefCurent; }
+            set { _DefCurent = value; }
+        }
+
         public string Type
         {
             get { return _agression; }
@@ -72,17 +100,21 @@ namespace WindowsFormsApplication1.MonsterType
         }
 
         #region DDBuild
-        public Hero SetDD(string name, int hp, int mp, int damage, int def, string agression, int  Experience, int ExperienceToLvl, int Lvl)
+        public Hero SetDD(string name, int hp, int mp, int damage, int def, string agression, int Experience, int ExperienceToLvl, int Lvl)
         {
             _name = name;
             _HP = hp;
+            _HPCurent = _HP;
             _MP = mp;
+            _MPCurent = _MP;
             _Damage = damage;
+            _DamageCurent = _Damage;
             _Def = def;
+            _DefCurent = _Def;
+            _Lvl = Lvl;
             _agression = agression;
             _experience = Experience;
-            _experienceToLvl = ExperienceToLvl;
-            _Lvl = Lvl;
+            _experienceToLvl = NextLvl(_Lvl);
             return this;
         }
 
@@ -90,16 +122,20 @@ namespace WindowsFormsApplication1.MonsterType
         {
             _name = "DD";
             _HP = 7;
+            _HPCurent = _HP;
             _MP = 6;
+            _MPCurent = _MP;
             _Damage = 10;
+            _DamageCurent = _Damage;
             _Def = 5;
+            _DefCurent = _Def;
             _agression = "DD";
             _Lvl = Lvl;
             _experience = 0;
 
             //   _experienceToLvl =(x)=>x>1? ;
 
-                return this;
+            return this;
         }
         #endregion
 
@@ -108,9 +144,13 @@ namespace WindowsFormsApplication1.MonsterType
         {
             _name = name;
             _HP = hp;
+            _HPCurent = _HP;
             _MP = mp;
+            _MPCurent = _MP;
             _Damage = damage;
+            _DamageCurent = _Damage;
             _Def = def;
+            _DefCurent = _Def;
             _agression = agression;
             _experience = 0;
             return this;
@@ -120,15 +160,19 @@ namespace WindowsFormsApplication1.MonsterType
         {
             _name = "Warrior";
             _HP = 10;
+            _HPCurent = _HP;
             _MP = 4;
+            _MPCurent = _MP;
             _Damage = 5;
+            _DamageCurent = _Damage;
             _Def = 7;
+            _DefCurent = _Def;
             _agression = "Defender";
             _experience = 0;
             return this;
         }
         #endregion
-        
+
         #region WizardBuilder
         public Hero SetWizard(string name, int hp, int mp, int damage, int def, string agression)
         {
@@ -153,16 +197,13 @@ namespace WindowsFormsApplication1.MonsterType
         }
         #endregion
 
-        public int[] NextLvl(int size)
+        public int NextLvl(int lvl)
         {
-            int[] Lvl=new int[size];
-            Lvl[1] = 100;
+            int Lvl;
+            Lvl = 100;
             Func<double, double> asd = null;
             asd = (x) => x > 1 ? asd(x - 1) + 0.5 * asd(x - 1) : x;
-            for (int i = 2; i < size; i++)
-            {
-                Lvl[i] = (int)(asd(i) * 100);
-            }
+            Lvl = (int)(asd(lvl) * 100);
             return Lvl;
         }
 

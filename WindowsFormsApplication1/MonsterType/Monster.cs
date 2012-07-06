@@ -41,6 +41,30 @@ namespace WindowsFormsApplication1.MonsterType
             set { throw new NotImplementedException(); }
         }
 
+        public float HPCurent
+        {
+            get { throw new NotImplementedException(); }
+            set { throw new NotImplementedException(); }
+        }
+
+        public float MPCurent
+        {
+            get { throw new NotImplementedException(); }
+            set { throw new NotImplementedException(); }
+        }
+
+        public float DamageCurent
+        {
+            get { throw new NotImplementedException(); }
+            set { throw new NotImplementedException(); }
+        }
+
+        public float DefCurent
+        {
+            get { throw new NotImplementedException(); }
+            set { throw new NotImplementedException(); }
+        }
+
 
         public string Type
         {
@@ -66,12 +90,5 @@ namespace WindowsFormsApplication1.MonsterType
             set { throw new NotImplementedException(); }
         }
 
-        //public Monster SetMonster(string a,HeroBuilder.Stat b,string c)
-        //{
-        //    Name = a;
-        //    Stat = b;
-        //    Agression = c;
-        //    return this;
-        //}
     }
 }

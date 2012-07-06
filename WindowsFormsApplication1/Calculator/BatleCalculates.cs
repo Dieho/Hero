@@ -36,7 +36,7 @@ namespace WindowsFormsApplication1.Calculator
 
         public float Damage(ILive Hero)
         {
-            return RandomFloat(Hero.Damage - Hero.Damage / 10, Hero.Damage + Hero.Damage / 10);
+            return RandomFloat(Hero.DamageCurent - Hero.DamageCurent / 10, Hero.DamageCurent + Hero.DamageCurent / 10);
         }
 
         #region Рендомизация Флота. Страшная чёрная магия
@@ -103,5 +103,10 @@ namespace WindowsFormsApplication1.Calculator
             return integerFinal + fractionFinal;
         }
         #endregion
+
+        public void Experience(ILive winner, ILive loser)
+        {
+            winner.experience += (int)loser.HP;
+        }
     }
 }

@@ -32,7 +32,7 @@ namespace WindowsFormsApplication1
         private void button4_Click(object sender, EventArgs e)
         {
 
-            if (hero1 == null || hero1.HP == 0)
+            if (hero1 == null || hero1.HPCurent == 0)
             {
                 richTextBox1.Clear();
                 hero1 = new Hero().SetDefender();
@@ -49,7 +49,7 @@ namespace WindowsFormsApplication1
         private void button6_Click(object sender, EventArgs e)
         {
 
-            if (hero1 == null || hero1.HP == 0)
+            if (hero1 == null || hero1.HPCurent == 0)
             {
                 richTextBox1.Clear();
                 hero1 = new Hero().SetWizard();
@@ -67,7 +67,7 @@ namespace WindowsFormsApplication1
         private void button5_Click(object sender, EventArgs e)
         {
 
-            if (hero1 == null || hero1.HP == 0)
+            if (hero1 == null || hero1.HPCurent == 0)
             {
                 richTextBox1.Clear();
                 hero1 = new Hero().SetDD();
@@ -88,10 +88,15 @@ namespace WindowsFormsApplication1
             Fight f = new Fight();
             string result;
             result = f.Kick(hero1, hero2);
-            richTextBox1.Text = richTextBox1.Text + hero1.Name + " - " + hero1.HP.ToString() + " - " + hero2.Name + " " + hero2.HP.ToString() + "\n" + result + " \n";
-            if (hero1.HP == 0 || hero2.HP == 0)
+            richTextBox1.Text = richTextBox1.Text + hero1.Name + " - " + hero1.HPCurent.ToString() + " - " + hero2.Name + " " + hero2.HPCurent.ToString() + "\n" + result + " \n";
+            if (hero1.HPCurent == 0 )
             {
                 hero1 = null;
+                
+                button1.Enabled = false;
+            }
+            if( hero2.HPCurent == 0)
+            {
                 hero2 = null;
                 button1.Enabled = false;
             }
@@ -151,17 +156,23 @@ namespace WindowsFormsApplication1
 
         private void button7_Click(object sender, EventArgs e)
         {
-            var ololo = DateTime.Now;
-            Hero asd=new Hero();
-            foreach(var i in asd.NextLvl(35))
-            {
-                richTextBox1.Text += i.ToString() + "\n";
-            }
-            var ololo2 = DateTime.Now;
-            TimeSpan a=new TimeSpan();
-            a = ololo2 - ololo;
-            richTextBox1.Text += a.Seconds.ToString();
+            richTextBox1.Text += hero1.experience.ToString() + "\n";
+            //var ololo = DateTime.Now;
+            //Hero asd=new Hero();
+            //foreach(var i in asd.NextLvl(35))
+            //{
+            //    richTextBox1.Text += i.ToString() + "\n";
+            //}
+            //var ololo2 = DateTime.Now;
+            //TimeSpan a=new TimeSpan();
+            //a = ololo2 - ololo;
+            //richTextBox1.Text += a.Seconds.ToString();
 
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            hero1.HPCurent = hero1.HP;
         }
     }
 }
