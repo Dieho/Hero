@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using WindowsFormsApplication1.Batle;
+using WindowsFormsApplication1.Calculator;
 using WindowsFormsApplication1.MonsterType;
 
 namespace WindowsFormsApplication1
@@ -92,12 +93,14 @@ namespace WindowsFormsApplication1
             if (hero1.HPCurent == 0 )
             {
                 hero1 = null;
-                
+
                 button1.Enabled = false;
             }
             if( hero2.HPCurent == 0)
             {
                 hero2 = null;
+                BatleCalculates asd = new BatleCalculates();
+                asd.LvlUp(hero1);
                 button1.Enabled = false;
             }
         }
@@ -156,7 +159,7 @@ namespace WindowsFormsApplication1
 
         private void button7_Click(object sender, EventArgs e)
         {
-            richTextBox1.Text += hero1.experience.ToString() + "\n";
+            richTextBox1.Text += "Exp -"+hero1.experience.ToString() +"Lvl -"+hero1.Lvl.ToString()+ "\n";
             //var ololo = DateTime.Now;
             //Hero asd=new Hero();
             //foreach(var i in asd.NextLvl(35))

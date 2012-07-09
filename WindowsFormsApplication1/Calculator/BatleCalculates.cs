@@ -108,5 +108,14 @@ namespace WindowsFormsApplication1.Calculator
         {
             winner.experience += (int)loser.HP;
         }
+
+        public void LvlUp(ILive hero)
+        {
+            if (hero.experience>=hero.experienceToLvl)
+            {
+                hero.Lvl++;
+                hero.experienceToLvl += (int)(hero.experienceToLvl*0.5);
+            }
+        }
     }
 }

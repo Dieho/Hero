@@ -140,7 +140,7 @@ namespace WindowsFormsApplication1.MonsterType
         #endregion
 
         #region DefenderBuilder
-        public Hero SetDefender(string name, int hp, int mp, int damage, int def, string agression)
+        public Hero SetDefender(string name, int hp, int mp, int damage, int def, string agression, int Experience, int ExperienceToLvl, int Lvl)
         {
             _name = name;
             _HP = hp;
@@ -151,8 +151,10 @@ namespace WindowsFormsApplication1.MonsterType
             _DamageCurent = _Damage;
             _Def = def;
             _DefCurent = _Def;
+            _Lvl = Lvl;
             _agression = agression;
-            _experience = 0;
+            _experience = Experience;
+            _experienceToLvl = NextLvl(_Lvl);
             return this;
         }
 
@@ -174,14 +176,21 @@ namespace WindowsFormsApplication1.MonsterType
         #endregion
 
         #region WizardBuilder
-        public Hero SetWizard(string name, int hp, int mp, int damage, int def, string agression)
+        public Hero SetWizard(string name, int hp, int mp, int damage, int def, string agression, int Experience, int ExperienceToLvl, int Lvl)
         {
             _name = name;
             _HP = hp;
+            _HPCurent = _HP;
             _MP = mp;
+            _MPCurent = _MP;
             _Damage = damage;
+            _DamageCurent = _Damage;
             _Def = def;
+            _DefCurent = _Def;
+            _Lvl = Lvl;
             _agression = agression;
+            _experience = Experience;
+            _experienceToLvl = NextLvl(_Lvl);
             return this;
         }
 
@@ -189,9 +198,13 @@ namespace WindowsFormsApplication1.MonsterType
         {//"Wizard", 5, 10, 24, 3, "Wizard"
             _name = "Wizard";
             _HP = 5;
+            _HPCurent = _HP;
             _MP = 12;
+            _MPCurent = _MP;
             _Damage = 24;
+            _DamageCurent = _Damage;
             _Def = 3;
+            _DefCurent = _Def;
             _agression = "Wizard";
             return this;
         }
