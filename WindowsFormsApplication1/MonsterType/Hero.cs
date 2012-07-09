@@ -132,8 +132,7 @@ namespace WindowsFormsApplication1.MonsterType
             _agression = "DD";
             _Lvl = Lvl;
             _experience = 0;
-
-            //   _experienceToLvl =(x)=>x>1? ;
+            _experienceToLvl = NextLvl(Lvl);
 
             return this;
         }
@@ -170,7 +169,9 @@ namespace WindowsFormsApplication1.MonsterType
             _Def = 7;
             _DefCurent = _Def;
             _agression = "Defender";
+            _Lvl = Lvl;
             _experience = 0;
+            _experienceToLvl = NextLvl(Lvl);
             return this;
         }
         #endregion
@@ -206,18 +207,27 @@ namespace WindowsFormsApplication1.MonsterType
             _Def = 3;
             _DefCurent = _Def;
             _agression = "Wizard";
+            _Lvl = Lvl;
+            _experience = 0;
+            _experienceToLvl = NextLvl(Lvl);
             return this;
         }
         #endregion
 
         public int NextLvl(int lvl)
         {
-            int Lvl;
-            Lvl = 100;
-            Func<double, double> asd = null;
-            asd = (x) => x > 1 ? asd(x - 1) + 0.5 * asd(x - 1) : x;
-            Lvl = (int)(asd(lvl) * 100);
-            return Lvl;
+            int Exp;
+            Exp = 100;
+            if (lvl == 1)
+                return Exp+50;
+           if (lvl>1)
+            {
+                Func<double, double> asd = null;
+                asd = (x) => x > 1 ? asd(x - 1) + 0.5 * asd(x - 1) : x;
+                Exp = (int)(asd(lvl) * 100);
+
+            }
+           return Exp;
         }
 
     }

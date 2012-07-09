@@ -38,6 +38,7 @@ namespace WindowsFormsApplication1
                 richTextBox1.Clear();
                 hero1 = new Hero().SetDefender();
                 richTextBox1.Text = "Welcome Warrior!";
+                button8.Enabled = true;
             }
             else
             {
@@ -55,6 +56,7 @@ namespace WindowsFormsApplication1
                 richTextBox1.Clear();
                 hero1 = new Hero().SetWizard();
                 richTextBox1.Text = "Welcome Wizard!";
+                button8.Enabled = true;
             }
             else
             {
@@ -73,6 +75,7 @@ namespace WindowsFormsApplication1
                 richTextBox1.Clear();
                 hero1 = new Hero().SetDD();
                 richTextBox1.Text = "Welcome DD!";
+                button8.Enabled = true;
             }
             else
             {
@@ -95,6 +98,7 @@ namespace WindowsFormsApplication1
                 hero1 = null;
 
                 button1.Enabled = false;
+                button8.Enabled = false;
             }
             if( hero2.HPCurent == 0)
             {
