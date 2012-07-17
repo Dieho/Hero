@@ -62,6 +62,7 @@
     <Compile Include="MonsterType\Monster.cs" />
     <Compile Include="MonsterType\Warrior.cs" />
     <Compile Include="MonsterType\Wizard.cs" />
+    <Compile Include="Skills\IBattleSkill.cs" />
     <Compile Include="StartForm.cs">
       <SubType>Form</SubType>
     </Compile>

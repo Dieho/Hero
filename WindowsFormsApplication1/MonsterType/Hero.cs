@@ -146,8 +146,7 @@ namespace WindowsFormsApplication1.MonsterType
 
         public int NextLvl(int lvl)
         {
-            int Exp;
-            Exp = 100;
+            int Exp = 100;
             if (lvl == 1)
                 return Exp + 50;
             if (lvl > 1)

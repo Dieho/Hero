@@ -26,7 +26,7 @@ namespace WindowsFormsApplication1.Batle
 
         public string Kick(ILive first, ILive second)
         {
-            BatleCalculates batleRandom = new BatleCalculates();
+            var batleRandom = new BatleCalculates();
             string result = "";
             if (first.HPCurent > 0 && second.HPCurent > 0)
             {

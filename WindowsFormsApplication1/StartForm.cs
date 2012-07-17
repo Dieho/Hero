@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
@@ -19,10 +14,9 @@ namespace WindowsFormsApplication1
         {
             InitializeComponent();
         }
-        private LandType.WorldMap world;
+        private LandType.WorldMap _world;
 
-        private ILive hero1, hero2;
-
+        private ILive _hero1, _hero2;
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -30,101 +24,79 @@ namespace WindowsFormsApplication1
         }
 
 
-        private void button4_Click(object sender, EventArgs e)
+        private void Button4Click(object sender, EventArgs e)
         {
+            var w=new Warrior().Build();
+            NewFight(w);
+        }
 
-            if (hero1 == null || hero1.HPCurent == 0)
+        private void Button5Click(object sender, EventArgs e)
+        {
+            var dd = new DD().Build();
+            NewFight(dd);
+        }
+
+        private void Button6Click(object sender, EventArgs e)
+        {
+            var wi = new Wizard().Build();
+            NewFight(wi);
+        }
+
+        public void  NewFight(ILive hero)
+        {
+            if (_hero1 == null || _hero1.HPCurent == 0)
             {
                 richTextBox1.Clear();
-                hero1 = new Warrior().Build();
-                richTextBox1.Text = "Welcome Warrior!";
+                _hero1 = hero;
+                richTextBox1.Text = "Welcome "+_hero1.Name+"!";
                 button8.Enabled = true;
             }
             else
             {
-                hero2 = new Warrior().Build();
-                richTextBox1.Text += "\nWelcome Warrior!\n";
+                _hero2 = hero;
+                richTextBox1.Text += "\nWelcome " + _hero2.Name + "!\n";
                 button1.Enabled = true;
             }
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void Button1Click(object sender, EventArgs e)
         {
 
-            if (hero1 == null || hero1.HPCurent == 0)
+            var f = new Fight();
+            string result = f.Kick(_hero1, _hero2);
+            richTextBox1.Text = richTextBox1.Text + _hero1.Name + " - " + _hero1.HPCurent.ToString() + " - " + _hero2.Name + " " + _hero2.HPCurent.ToString() + "\n" + result + " \n";
+            if (_hero1.HPCurent == 0 )
             {
-                richTextBox1.Clear();
-                hero1 = new Wizard().Build();
-                richTextBox1.Text = "Welcome Wizard!";
-                button8.Enabled = true;
-            }
-            else
-            {
-                hero2 = new Wizard().Build();
-                richTextBox1.Text += "\nWelcome Wizard!\n";
-                button1.Enabled = true;
-
-            }
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-
-            if (hero1 == null || hero1.HPCurent == 0)
-            {
-                richTextBox1.Clear();
-                hero1 = new DD().Build();
-                richTextBox1.Text = "Welcome DD!";
-                button8.Enabled = true;
-            }
-            else
-            {
-                hero2 = new DD().Build();
-                richTextBox1.Text += "\nWelcome DD!\n";
-                button1.Enabled = true;
-            }
-        }
-
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-            Fight f = new Fight();
-            string result;
-            result = f.Kick(hero1, hero2);
-            richTextBox1.Text = richTextBox1.Text + hero1.Name + " - " + hero1.HPCurent.ToString() + " - " + hero2.Name + " " + hero2.HPCurent.ToString() + "\n" + result + " \n";
-            if (hero1.HPCurent == 0 )
-            {
-                hero1 = null;
+                _hero1 = null;
 
                 button1.Enabled = false;
                 button8.Enabled = false;
             }
-            if( hero2.HPCurent == 0)
+            if( _hero2.HPCurent == 0)
             {
-                hero2 = null;
-                BatleCalculates asd = new BatleCalculates();
-                asd.LvlUp(hero1);
+                _hero2 = null;
+                var asd = new BatleCalculates();
+                asd.LvlUp(_hero1);
                 button1.Enabled = false;
             }
         }
 
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Button2Click(object sender, EventArgs e)
         {
             GenerateWorld();
         }
 
         public void GenerateWorld()
         {
-            world = new LandType.WorldMap(Convert.ToInt32(tbColumns.Text), Convert.ToInt32(tbLines.Text));
-            var map = world.Map;
+            _world = new LandType.WorldMap(Convert.ToInt32(tbColumns.Text), Convert.ToInt32(tbLines.Text));
+            var map = _world.Map;
 
             var sb = new StringBuilder("Карта (Суша-Вода-Горы)\n");
 
-            for (int i = 0; i < world.HeightCount; i++)
+            for (int i = 0; i < _world.HeightCount; i++)
             {
-                for (int j = 0; j < world.WidthCount; j++)
+                for (int j = 0; j < _world.WidthCount; j++)
                 {
                     sb.Append(string.Format("{0}-{1}-{2}\t", map[i, j].Ground, map[i, j].Water, map[i, j].Mountain));
                 }
@@ -142,9 +114,9 @@ namespace WindowsFormsApplication1
         }
 
 
-        private void button3_Click(object sender, EventArgs e)
+        private void Button3Click(object sender, EventArgs e)
         {
-            LandType.ILand[,] part = world.GetWorldMapPart(Convert.ToInt32(comboBox1.SelectedValue),
+            LandType.ILand[,] part = _world.GetWorldMapPart(Convert.ToInt32(comboBox1.SelectedValue),
                                                            Convert.ToInt32(comboBox2.SelectedValue));
 
             var sb = new StringBuilder(string.Format("Участок[{0}][{1}]:\n", Convert.ToInt32(comboBox1.Text),
@@ -161,25 +133,14 @@ namespace WindowsFormsApplication1
             richTextBox1.Text += sb.ToString();
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void Button7Click(object sender, EventArgs e)
         {
-            richTextBox1.Text += "Exp - "+hero1.experience.ToString() +"Lvl - "+hero1.Lvl.ToString()+ "\n";
-            //var ololo = DateTime.Now;
-            //Hero asd=new Hero();
-            //foreach(var i in asd.NextLvl(35))
-            //{
-            //    richTextBox1.Text += i.ToString() + "\n";
-            //}
-            //var ololo2 = DateTime.Now;
-            //TimeSpan a=new TimeSpan();
-            //a = ololo2 - ololo;
-            //richTextBox1.Text += a.Seconds.ToString();
-
+            richTextBox1.Text += "Exp - " + _hero1.experience.ToString() + "Lvl - " + _hero1.Lvl.ToString() + "\n";
         }
 
-        private void button8_Click(object sender, EventArgs e)
+        private void Button8Click(object sender, EventArgs e)
         {
-            hero1.HPCurent = hero1.HP;
+            _hero1.HPCurent = _hero1.HP;
         }
     }
 }

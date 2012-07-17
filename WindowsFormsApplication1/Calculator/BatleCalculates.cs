@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using System.Threading;
 using WindowsFormsApplication1.MonsterType;
 
 namespace WindowsFormsApplication1.Calculator
@@ -9,20 +7,21 @@ namespace WindowsFormsApplication1.Calculator
     class BatleCalculates
     {
         /// <summary>
-        /// Шанс попадания
+        /// Hit chance
         /// </summary>
         /// <param name="first"></param>
-        /// <returns></returns>
+        /// <returns>bool.If True - Hit, if False - miss</returns>
         public bool ChanceToHit(ILive first)
         {
             var rand = new Random();
+            Thread.Sleep(10);  // here and in future @Thread.Sleep(10);@ - for good random value. Fix before librerary compilation.
             double chanceToHit = rand.NextDouble();
             switch (first.Type)
             {
-                case "Defender": if (chanceToHit > 0.8)
+                case "Warrior": if (chanceToHit > 0.7)
                         return false; break;
                 case "Wizard": break;
-                case "DD": if (chanceToHit > 0.9)
+                case "DD": if (chanceToHit > 0.8)
                         return false; break;
                 case "Monster1": if (chanceToHit > 0.5)
                         return false; break;
@@ -33,24 +32,24 @@ namespace WindowsFormsApplication1.Calculator
             }
             return true;
         }
-
-        public float Damage(ILive Hero)
+        
+        public float Damage(ILive hero)
         {
-            return RandomFloat(Hero.DamageCurent - Hero.DamageCurent / 10, Hero.DamageCurent + Hero.DamageCurent / 10);
+            return RandomFloat(hero.DamageCurent - hero.DamageCurent / 3, hero.DamageCurent + hero.DamageCurent / 3);
         }
 
         #region Рендомизация Флота. Страшная чёрная магия
         public float RandomFloat(int min, int max)
         {
             var rand = new Random();
-            int integer, fraction;
-            integer = rand.Next(min, max - 1);
-            fraction = rand.Next(0, 99) / 100;
+            int integer = rand.Next(min, max - 1);
+            int fraction = rand.Next(0, 99) / 100;
             return integer + fraction;
         }
 
         public float RandomFloat(float min, float max)
         {
+            Thread.Sleep(10);
             min = (float)Math.Round(min, 2);
             var rand = new Random();
             int integer = (int)(min), fraction = (int)((min - Math.Floor(min)) * 100);
