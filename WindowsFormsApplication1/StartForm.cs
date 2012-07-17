@@ -36,13 +36,13 @@ namespace WindowsFormsApplication1
             if (hero1 == null || hero1.HPCurent == 0)
             {
                 richTextBox1.Clear();
-                hero1 = new Hero().SetDefender();
+                hero1 = new Warrior().Build();
                 richTextBox1.Text = "Welcome Warrior!";
                 button8.Enabled = true;
             }
             else
             {
-                hero2 = new Hero().SetDefender();
+                hero2 = new Warrior().Build();
                 richTextBox1.Text += "\nWelcome Warrior!\n";
                 button1.Enabled = true;
             }
@@ -54,13 +54,13 @@ namespace WindowsFormsApplication1
             if (hero1 == null || hero1.HPCurent == 0)
             {
                 richTextBox1.Clear();
-                hero1 = new Hero().SetWizard();
+                hero1 = new Wizard().Build();
                 richTextBox1.Text = "Welcome Wizard!";
                 button8.Enabled = true;
             }
             else
             {
-                hero2 = new Hero().SetWizard();
+                hero2 = new Wizard().Build();
                 richTextBox1.Text += "\nWelcome Wizard!\n";
                 button1.Enabled = true;
 
@@ -73,13 +73,13 @@ namespace WindowsFormsApplication1
             if (hero1 == null || hero1.HPCurent == 0)
             {
                 richTextBox1.Clear();
-                hero1 = new Hero().SetDD();
+                hero1 = new DD().Build();
                 richTextBox1.Text = "Welcome DD!";
                 button8.Enabled = true;
             }
             else
             {
-                hero2 = new Hero().SetDD();
+                hero2 = new DD().Build();
                 richTextBox1.Text += "\nWelcome DD!\n";
                 button1.Enabled = true;
             }
@@ -163,7 +163,7 @@ namespace WindowsFormsApplication1
 
         private void button7_Click(object sender, EventArgs e)
         {
-            richTextBox1.Text += "Exp -"+hero1.experience.ToString() +"Lvl -"+hero1.Lvl.ToString()+ "\n";
+            richTextBox1.Text += "Exp - "+hero1.experience.ToString() +"Lvl - "+hero1.Lvl.ToString()+ "\n";
             //var ololo = DateTime.Now;
             //Hero asd=new Hero();
             //foreach(var i in asd.NextLvl(35))

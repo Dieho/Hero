@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 
@@ -20,5 +21,7 @@ namespace WindowsFormsApplication1.MonsterType
         int experience { get; set; }
         int experienceToLvl { get; set; }
         int Lvl { get; set; }
+        Point location { get; set; }
+        Point mapPosition { get; set; }
     }
 }

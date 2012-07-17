@@ -56,9 +56,12 @@
     <Compile Include="LandType\Mountain.cs" />
     <Compile Include="LandType\Water.cs" />
     <Compile Include="LandType\WorldMap.cs" />
+    <Compile Include="MonsterType\DD.cs" />
     <Compile Include="MonsterType\Hero.cs" />
     <Compile Include="MonsterType\ILive.cs" />
     <Compile Include="MonsterType\Monster.cs" />
+    <Compile Include="MonsterType\Warrior.cs" />
+    <Compile Include="MonsterType\Wizard.cs" />
     <Compile Include="StartForm.cs">
       <SubType>Form</SubType>
     </Compile>
