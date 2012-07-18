@@ -49,6 +49,8 @@
     <Compile Include="Batle\Fight.cs" />
     <Compile Include="Batle\IBatle.cs" />
     <Compile Include="Calculator\BatleCalculates.cs" />
+    <Compile Include="Effects\Bleeding.cs" />
+    <Compile Include="Effects\Eff.cs" />
     <Compile Include="Generator\Generator.cs" />
     <Compile Include="LandType\Ground.cs" />
     <Compile Include="LandType\ILand.cs" />
@@ -62,7 +64,8 @@
     <Compile Include="MonsterType\Monster.cs" />
     <Compile Include="MonsterType\Warrior.cs" />
     <Compile Include="MonsterType\Wizard.cs" />
-    <Compile Include="Skills\IBattleSkill.cs" />
+    <Compile Include="Skills\BattleSkill\BleedingSting.cs" />
+    <Compile Include="Skills\ISkill.cs" />
     <Compile Include="StartForm.cs">
       <SubType>Form</SubType>
     </Compile>

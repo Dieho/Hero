@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using WindowsFormsApplication1.Effects;
 
 namespace WindowsFormsApplication1.MonsterType
 {
@@ -23,5 +24,6 @@ namespace WindowsFormsApplication1.MonsterType
         int Lvl { get; set; }
         Point location { get; set; }
         Point mapPosition { get; set; }
+        List<Eff> effects { get; set; }
     }
 }

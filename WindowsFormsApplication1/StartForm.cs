@@ -4,7 +4,9 @@ using System.Text;
 using System.Windows.Forms;
 using WindowsFormsApplication1.Batle;
 using WindowsFormsApplication1.Calculator;
+using WindowsFormsApplication1.Effects;
 using WindowsFormsApplication1.MonsterType;
+using WindowsFormsApplication1.Skills.BattleSkill;
 
 namespace WindowsFormsApplication1
 {
@@ -26,7 +28,7 @@ namespace WindowsFormsApplication1
 
         private void Button4Click(object sender, EventArgs e)
         {
-            var w=new Warrior().Build();
+            var w = new Warrior().Build();
             NewFight(w);
         }
 
@@ -42,13 +44,13 @@ namespace WindowsFormsApplication1
             NewFight(wi);
         }
 
-        public void  NewFight(ILive hero)
+        public void NewFight(ILive hero)
         {
             if (_hero1 == null || _hero1.HPCurent == 0)
             {
                 richTextBox1.Clear();
                 _hero1 = hero;
-                richTextBox1.Text = "Welcome "+_hero1.Name+"!";
+                richTextBox1.Text = "Welcome " + _hero1.Name + "!";
                 button8.Enabled = true;
             }
             else
@@ -65,14 +67,14 @@ namespace WindowsFormsApplication1
             var f = new Fight();
             string result = f.Kick(_hero1, _hero2);
             richTextBox1.Text = richTextBox1.Text + _hero1.Name + " - " + _hero1.HPCurent.ToString() + " - " + _hero2.Name + " " + _hero2.HPCurent.ToString() + "\n" + result + " \n";
-            if (_hero1.HPCurent == 0 )
+            if (_hero1.HPCurent == 0)
             {
                 _hero1 = null;
 
                 button1.Enabled = false;
                 button8.Enabled = false;
             }
-            if( _hero2.HPCurent == 0)
+            if (_hero2.HPCurent == 0)
             {
                 _hero2 = null;
                 var asd = new BatleCalculates();
@@ -141,6 +143,12 @@ namespace WindowsFormsApplication1
         private void Button8Click(object sender, EventArgs e)
         {
             _hero1.HPCurent = _hero1.HP;
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            BleedingSting b = new BleedingSting();
+            b.Smash(_hero2);
         }
     }
 }

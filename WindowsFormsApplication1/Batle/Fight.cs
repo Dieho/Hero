@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using WindowsFormsApplication1.Calculator;
+using WindowsFormsApplication1.Effects;
 using WindowsFormsApplication1.MonsterType;
+using WindowsFormsApplication1.Skills;
 
 namespace WindowsFormsApplication1.Batle
 {
@@ -24,8 +26,9 @@ namespace WindowsFormsApplication1.Batle
             set { _second = value; }
         }
 
-        public string Kick(ILive first, ILive second)
+        public string Kick(ILive first, ILive second )
         {
+            GoEffect(first, second);
             var batleRandom = new BatleCalculates();
             string result = "";
             if (first.HPCurent > 0 && second.HPCurent > 0)
@@ -66,6 +69,19 @@ namespace WindowsFormsApplication1.Batle
             }
 
             return result;
+        }
+
+        public void GoEffect(ILive first, ILive second)
+        {
+            foreach(var i in first.effects)
+            {
+                i.Go(first);
+            }
+
+            foreach (var i in second.effects)
+            {
+                i.Go(second);
+            }
         }
 
     }

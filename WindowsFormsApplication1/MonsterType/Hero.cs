@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using WindowsFormsApplication1.Effects;
 
 namespace WindowsFormsApplication1.MonsterType
 {
@@ -23,6 +24,7 @@ namespace WindowsFormsApplication1.MonsterType
         protected int _Lvl;
         protected Point _mapPosition;
         protected Point _location;
+        protected List<Eff> _effects=new List<Eff>();
 
         #region
         public string Name
@@ -115,19 +117,23 @@ namespace WindowsFormsApplication1.MonsterType
             set { _mapPosition = value; }
         }
 
+        public List<Eff> effects
+        {
+            get { return _effects; }
+            set { _effects = value; }
+        }
 
         #endregion
         //#region DDBuild
 
 
-        protected Hero SetHero(string name, int hp, int mp, int damage, int def, string agression, int Experience, int Lvl, int ExperienceToLvl, int X, int Y, int x, int y)
+        protected Hero SetHero(string name, int hp, int mp, int damage, int def, string agression, int Experience, int Lvl, int ExperienceToLvl, int X, int Y, int x, int y, Eff effect=null)
         {
             _location.X = x;
             _location.Y = y;
             _mapPosition.X = X;
             _mapPosition.Y = Y;
-            _name = name;
-            _HP = hp;
+            _name = name;_HP = hp;
             _HPCurent = _HP;
             _MP = mp;
             _MPCurent = _MP;
@@ -139,6 +145,8 @@ namespace WindowsFormsApplication1.MonsterType
             _agression = agression;
             _experience = Experience;
             _experienceToLvl = NextLvl(_Lvl);
+            if (effect!=null)
+            _effects.Add(effect);
             return this;
 
         }

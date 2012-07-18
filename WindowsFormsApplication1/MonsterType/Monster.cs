@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using WindowsFormsApplication1.Effects;
 
 namespace WindowsFormsApplication1.MonsterType
 {
@@ -98,6 +99,12 @@ namespace WindowsFormsApplication1.MonsterType
         }
 
         public Point mapPosition
+        {
+            get { throw new NotImplementedException(); }
+            set { throw new NotImplementedException(); }
+        }
+
+        public List<Eff> effects
         {
             get { throw new NotImplementedException(); }
             set { throw new NotImplementedException(); }
