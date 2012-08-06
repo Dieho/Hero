@@ -22,6 +22,7 @@ namespace WindowsFormsApplication1.Effects
             {
                 victim.HPCurent -= (float)0.3;
                 Time -= 1;
+                
             }
             else
             {

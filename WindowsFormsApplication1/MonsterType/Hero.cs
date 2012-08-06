@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using WindowsFormsApplication1.Effects;
+using WindowsFormsApplication1.Skills;
 
 namespace WindowsFormsApplication1.MonsterType
 {
@@ -25,6 +26,8 @@ namespace WindowsFormsApplication1.MonsterType
         protected Point _mapPosition;
         protected Point _location;
         protected List<Eff> _effects=new List<Eff>();
+        protected List<IBattleSkill> _battleSkills=new List<IBattleSkill>();
+        protected List<Skill> _skillInUse=new List<Skill>();
 
         #region
         public string Name
@@ -123,11 +126,23 @@ namespace WindowsFormsApplication1.MonsterType
             set { _effects = value; }
         }
 
+        public List<IBattleSkill> battleSkills
+        {
+            get { return _battleSkills; }
+            set { _battleSkills = value; }
+        }
+
+        public List<Skill> skillInUse
+        {
+            get { return _skillInUse; }
+            set { _skillInUse = value; }
+        }
+
         #endregion
         //#region DDBuild
 
 
-        protected Hero SetHero(string name, int hp, int mp, int damage, int def, string agression, int Experience, int Lvl, int ExperienceToLvl, int X, int Y, int x, int y, Eff effect=null)
+        protected Hero SetHero(string name, int hp, int mp, int damage, int def, string agression, int Experience, int Lvl, int ExperienceToLvl, int X, int Y, int x, int y, Eff effect=null, IBattleSkill bskill=null,Skill skillInUse=null)
         {
             _location.X = x;
             _location.Y = y;
@@ -147,6 +162,10 @@ namespace WindowsFormsApplication1.MonsterType
             _experienceToLvl = NextLvl(_Lvl);
             if (effect!=null)
             _effects.Add(effect);
+            if (bskill != null)
+                _battleSkills.Add(bskill);
+            if (skillInUse!=null)
+                _skillInUse.Add(skillInUse);
             return this;
 
         }

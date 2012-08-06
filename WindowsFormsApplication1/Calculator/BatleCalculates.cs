@@ -114,6 +114,13 @@ namespace WindowsFormsApplication1.Calculator
             {
                 hero.Lvl++;
                 hero.experienceToLvl += (int)(hero.experienceToLvl*0.5);
+                switch (hero.Type)
+                {
+                    case "Warrior": 
+                        var w=new Warrior();
+                        w.LvlUp(hero);
+                        break;
+                }
             }
         }
     }

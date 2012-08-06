@@ -20,6 +20,7 @@ namespace WindowsFormsApplication1
 
         private ILive _hero1, _hero2;
 
+
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -28,7 +29,7 @@ namespace WindowsFormsApplication1
 
         private void Button4Click(object sender, EventArgs e)
         {
-            var w = new Warrior().Build();
+            var w = new Warrior().Build(Experience:99,bskill:new BleedingSting());
             NewFight(w);
         }
 
@@ -80,6 +81,15 @@ namespace WindowsFormsApplication1
                 var asd = new BatleCalculates();
                 asd.LvlUp(_hero1);
                 button1.Enabled = false;
+            }
+            //if (_hero1.skillInUse.Blee)
+            foreach (var i in _hero1.skillInUse)
+            {
+                if (i.Name=="BleedingSting")
+                {
+                    if (i.IsCooled)
+                        button9.Enabled = true;
+                }
             }
         }
 
@@ -147,8 +157,28 @@ namespace WindowsFormsApplication1
 
         private void button9_Click(object sender, EventArgs e)
         {
-            BleedingSting b = new BleedingSting();
-            b.Smash(_hero2);
+            BleedingSting b=new BleedingSting();
+            var f = new Fight();
+            string result = f.Kick(_hero1, _hero2, b);
+            richTextBox1.Text = richTextBox1.Text + _hero1.Name + " - " + _hero1.HPCurent.ToString() + " - " +
+                                _hero2.Name + " " + _hero2.HPCurent.ToString() + "\n" + result + " \n";
+            if (_hero1.HPCurent == 0)
+            {
+                _hero1 = null;
+
+                button1.Enabled = false;
+                button8.Enabled = false;
+            }
+            if (_hero2.HPCurent == 0)
+            {
+                _hero2 = null;
+                var asd = new BatleCalculates();
+                asd.LvlUp(_hero1);
+                button1.Enabled = false;
+            }
+
+            button9.Enabled = false;
+
         }
     }
 }

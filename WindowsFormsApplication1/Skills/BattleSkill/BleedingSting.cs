@@ -7,14 +7,25 @@ using WindowsFormsApplication1.MonsterType;
 
 namespace WindowsFormsApplication1.Skills.BattleSkill
 {
-    class BleedingSting:IBattleSkill
+    class BleedingSting :  Skill,IBattleSkill
     {
-        private int _lvl;
-        private float _damage;
+        private int _lvl = 1;
+        private float _damage = (float)1.5;
         private float _skillDamage;
-        private int _skillEffect;
-        private int _coolDown;
-        private int _toCollDown;
+        private Eff _skillEffect = new Bleeding();
+        //private int _coolDown = 5;
+        //public bool isCooled;
+        public override string Name
+        {
+            get
+            {
+                return "BleedingSting";
+            }
+            set
+            {
+                base.Name = value;
+            }
+        }
 
         public int Lvl
         {
@@ -28,36 +39,41 @@ namespace WindowsFormsApplication1.Skills.BattleSkill
             set { _damage = value; }
         }
 
-        public float SkillDamage
+        public float SkillDamage(ILive you)
         {
-            get { return _skillDamage; }
-            set { _skillDamage = value; }
+            _skillDamage = you.DamageCurent * _damage;
+            return _skillDamage;
         }
 
-        public int SkillEffect
+        public Eff SkillEffect { get { return _skillEffect; } set { _skillEffect = value; } }
+
+        //public int CoolDown
+        //{
+        //    get { return _coolDown; }
+        //    set { _coolDown = value; }
+        //}
+
+        //public void ToCollDown()
+        //{
+        //    if (CoolDown > 0)
+        //    {
+        //        CoolDown--;
+        //        isCooled = false;
+        //    }
+        //    else
+        //    {
+        //        isCooled = true;
+        //    }
+        //}
+
+        public float Smash(ILive you, ILive victim)
         {
-            get { return _skillEffect; }
-            set { _skillEffect = value; }
+            SkillDamage(you);
+            var a = SkillEffect;
+            victim.effects.Add(a);
+            return _skillDamage;
         }
 
-        public int CoolDown
-        {
-            get { return _coolDown; }
-            set { _coolDown = value; }
-        }
 
-        public int ToCollDown
-        {
-            get { return _toCollDown; }
-            set { _toCollDown = value; }
-        }
-
-        public double Smash(ILive you)
-        {
-           var sDamage = you.DamageCurent*1.5;
-           Bleeding a = new Bleeding();
-           you.effects.Add(a);
-           return sDamage;
-        }
     }
 }

@@ -6,6 +6,7 @@ using WindowsFormsApplication1.Calculator;
 using WindowsFormsApplication1.Effects;
 using WindowsFormsApplication1.MonsterType;
 using WindowsFormsApplication1.Skills;
+using WindowsFormsApplication1.Skills.BattleSkill;
 
 namespace WindowsFormsApplication1.Batle
 {
@@ -26,9 +27,9 @@ namespace WindowsFormsApplication1.Batle
             set { _second = value; }
         }
 
-        public string Kick(ILive first, ILive second )
+        public string Kick(ILive first, ILive second, IBattleSkill skill = null)
         {
-            GoEffect(first, second);
+
             var batleRandom = new BatleCalculates();
             string result = "";
             if (first.HPCurent > 0 && second.HPCurent > 0)
@@ -40,7 +41,14 @@ namespace WindowsFormsApplication1.Batle
                 }
                 else
                 {
-                    second.HPCurent = second.HPCurent - batleRandom.Damage(first) / second.DefCurent;
+                    if (skill == null)
+                        second.HPCurent = second.HPCurent - batleRandom.Damage(first) / second.DefCurent;
+                    else
+                    {
+                        first.skillInUse.Add(skill as Skill);
+                        second.HPCurent = second.HPCurent - skill.Smash(first, second) / second.DefCurent;
+                    }
+
                 }
                 if (first.HPCurent > 0 && second.HPCurent > 0)
                 {
@@ -53,6 +61,7 @@ namespace WindowsFormsApplication1.Batle
                         first.HPCurent = first.HPCurent - batleRandom.Damage(second) / first.DefCurent;
                     }
                 }
+                GoEffect(first, second);
             }
 
             if (first.HPCurent <= 0)
@@ -65,7 +74,7 @@ namespace WindowsFormsApplication1.Batle
             {
                 second.HPCurent = 0;
                 result += "He is dead!:)";
-                batleRandom.Experience( first,second);
+                batleRandom.Experience(first, second);
             }
 
             return result;
@@ -73,14 +82,38 @@ namespace WindowsFormsApplication1.Batle
 
         public void GoEffect(ILive first, ILive second)
         {
-            foreach(var i in first.effects)
+            if (first.effects.Count != 0)
             {
-                i.Go(first);
+                foreach (var i in first.effects)
+                {
+
+                    i.Go(first);
+                }
             }
 
-            foreach (var i in second.effects)
+            if (second.effects.Count != 0)
             {
-                i.Go(second);
+                foreach (var i in second.effects)
+                {
+                    i.Go(second);
+                }
+            }
+
+            if (first.skillInUse.Count != 0)
+            {
+                foreach (var i in first.skillInUse)
+                {
+                    i.ToCollDown();// i.Go(first);
+
+                }
+            }
+
+            if (second.skillInUse.Count != 0)
+            {
+                foreach (var i in second.skillInUse)
+                {
+                    i.ToCollDown();//  i.Go(second);
+                }
             }
         }
 

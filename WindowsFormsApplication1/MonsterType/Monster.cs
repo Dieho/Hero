@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using WindowsFormsApplication1.Effects;
+using WindowsFormsApplication1.Skills;
 
 namespace WindowsFormsApplication1.MonsterType
 {
@@ -105,6 +106,18 @@ namespace WindowsFormsApplication1.MonsterType
         }
 
         public List<Eff> effects
+        {
+            get { throw new NotImplementedException(); }
+            set { throw new NotImplementedException(); }
+        }
+
+        public List<IBattleSkill> battleSkills
+        {
+            get { throw new NotImplementedException(); }
+            set { throw new NotImplementedException(); }
+        }
+
+        public List<Skill> skillInUse
         {
             get { throw new NotImplementedException(); }
             set { throw new NotImplementedException(); }

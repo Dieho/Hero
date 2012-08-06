@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using WindowsFormsApplication1.Effects;
+using WindowsFormsApplication1.Skills;
 
 namespace WindowsFormsApplication1.MonsterType
 {
@@ -25,5 +26,8 @@ namespace WindowsFormsApplication1.MonsterType
         Point location { get; set; }
         Point mapPosition { get; set; }
         List<Eff> effects { get; set; }
+        List<IBattleSkill> battleSkills { get; set; }
+        List<Skill> skillInUse { get; set; }
+
     }
 }
