@@ -85,6 +85,5 @@ namespace WindowsFormsApplication1.Skills
         float Damage { get; set; }
         float SkillDamage(ILive you);
         float Smash(ILive you, ILive victim);
-        Eff SkillEffect { get; set; }
     }
 }

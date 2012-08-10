@@ -13,7 +13,7 @@ namespace WindowsFormsApplication1.Effects
         public Bleeding()
         {
             _time = 10;
-        } 
+        }
 
         public int Time
         {
@@ -21,25 +21,20 @@ namespace WindowsFormsApplication1.Effects
             set { _time = value; }
         }
 
-       public void Go(ILive victim, int i)
+        public void Go(ILive victim, int i)
         {
             if (victim.effects[i].Time > 0)
             {
                 victim.HPCurent -= (float)0.3;
                 victim.effects[i].Time -= 1;
-                
+
             }
             else
             {
-                //foreach (var j in victim.effects)
-                //{
-                //    if (j.Time<=0)
-                //    {
+
                 victim.effects.RemoveAt(i);
-                //    break;
-                //}
-            //}
-        }
+
+            }
         }
 
     }

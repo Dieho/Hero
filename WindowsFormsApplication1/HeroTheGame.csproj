@@ -69,6 +69,7 @@
     <Compile Include="Skills\BattleSkill\BleedingSting.cs" />
     <Compile Include="Skills\ISkill.cs" />
     <Compile Include="Skills\MageSkill\FireBall.cs" />
+    <Compile Include="Skills\MageSkill\MageSkillEnum.cs" />
     <Compile Include="StartForm.cs">
       <SubType>Form</SubType>
     </Compile>

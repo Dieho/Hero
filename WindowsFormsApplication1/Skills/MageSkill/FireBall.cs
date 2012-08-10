@@ -13,7 +13,7 @@ namespace WindowsFormsApplication1.Skills.MageSkill
         private const int _coolDown = 7;
         private float _damage = (float)1.3;
         private float _skillDamage;
-        private Eff _skillEffect = new Bleeding();
+        
         public FireBall()
         {
             base.CoolDown = _coolDown;
@@ -46,7 +46,7 @@ namespace WindowsFormsApplication1.Skills.MageSkill
 
         public override bool SkillCondition(ILive you)
         {
-            if (you.Lvl>0&&you.Type!="Wizard")
+            if (you.Lvl>0&&you.Type=="Wizard")
             {return true;}
             return false;
         }
@@ -63,17 +63,10 @@ namespace WindowsFormsApplication1.Skills.MageSkill
             return _skillDamage;
         }
 
-        public Eff SkillEffect
-        {
-            get { return _skillEffect; } 
-            set { _skillEffect = value; }
-        }
-
         public float Smash(ILive you, ILive victim)
         {
             SkillDamage(you);
-            var a = SkillEffect;
-            victim.effects.Add(a);
+            victim.effects.Add(new burning());
             return _skillDamage;
         }
     }

@@ -6,17 +6,35 @@ using WindowsFormsApplication1.MonsterType;
 
 namespace WindowsFormsApplication1.Effects
 {
-    class burning:Eff
+    class burning : Eff
     {
+        private int _time;
+
+        public burning()
+        {
+            _time = 5;
+        }
+
         public int Time
         {
-            get { throw new NotImplementedException(); }
-            set { throw new NotImplementedException(); }
+            get { return _time; }
+            set { _time = value; }
         }
 
         public void Go(ILive victim, int i)
         {
-            throw new NotImplementedException();
+            if (victim.effects[i].Time > 0)
+            {
+                victim.HPCurent -= (float)0.4;
+                victim.effects[i].Time -= 1;
+
+            }
+            else
+            {
+
+                victim.effects.RemoveAt(i);
+
+            }
         }
 
     }
