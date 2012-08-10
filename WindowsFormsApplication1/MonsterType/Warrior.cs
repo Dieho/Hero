@@ -19,8 +19,13 @@ namespace WindowsFormsApplication1.MonsterType
         }
 
        public void LvlUp(ILive hero)
-       {var b=new BleedingSting();
-           hero.battleSkills.Add(b);
+       {//var b=new BleedingSting();
+        //   hero.battleSkills.Add(b);
+           foreach (var i in BattleSkillEnum.BattleSkills)
+           {
+               if (i.SkillCondition(hero))
+                   hero.battleSkills.Add(i as IBattleSkill);
+           }
        }
     }
 }

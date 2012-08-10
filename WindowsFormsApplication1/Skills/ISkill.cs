@@ -7,16 +7,39 @@ using WindowsFormsApplication1.MonsterType;
 
 namespace WindowsFormsApplication1.Skills
 {
-    public abstract class  Skill{
+    public abstract class  Skill
+    {
         private string _name;
-        private int CoolDown = 5;
         private bool isCooled;
+        private int _cooldown;
+        private short _lvl;
+        private int _rollBack;
 
+        #region virtual methods
         public virtual string Name
         {
             get { return _name; }
-            set { _name = value; }
         }
+
+        public virtual int CoolDown
+        {
+            get { return _cooldown; }
+            set { _cooldown = value; }
+        }
+
+        public virtual short Lvl
+        {
+            get { return _lvl; }
+        }
+
+        public virtual int RollBack
+        {
+            get { return _rollBack; }
+            set { _rollBack = value; }
+        }
+
+        public virtual bool SkillCondition(ILive you) { return true; }
+        #endregion
 
         public bool IsCooled
         {
@@ -24,9 +47,9 @@ namespace WindowsFormsApplication1.Skills
             set { isCooled = value; }
         }
 
-        public void ToCollDown()
+        public void ToCollDown(ILive you)
         {
-            if (CoolDown > 0)
+            if (_cooldown > 0)
             {
                 CoolDown--;
                 isCooled = false;
@@ -34,19 +57,19 @@ namespace WindowsFormsApplication1.Skills
             else
             {
                 isCooled = true;
+                you.skillInUse.Remove(this);
+                _cooldown = RollBack;
             }
         }
+
     }
 
     public interface IBattleSkill
     {
-        int Lvl { get; set; }
-        float Damage { get; set;}
+        float Damage { get;}
         float SkillDamage(ILive you);
-        Eff SkillEffect { get; set; }
-        //int CoolDown { get; set; }
-        //void ToCollDown();
         float Smash(ILive you, ILive victim);
+      //  Eff SkillEffect { get; set; }
     }
 
     interface IPassiveSkill
@@ -59,5 +82,9 @@ namespace WindowsFormsApplication1.Skills
 
     interface IMageSkill
     {
+        float Damage { get; set; }
+        float SkillDamage(ILive you);
+        float Smash(ILive you, ILive victim);
+        Eff SkillEffect { get; set; }
     }
 }

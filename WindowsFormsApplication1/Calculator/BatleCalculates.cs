@@ -110,8 +110,6 @@ namespace WindowsFormsApplication1.Calculator
 
         public void LvlUp(ILive hero)
         {
-            if (hero.experience>=hero.experienceToLvl)
-            {
                 hero.Lvl++;
                 hero.experienceToLvl += (int)(hero.experienceToLvl*0.5);
                 switch (hero.Type)
@@ -121,7 +119,6 @@ namespace WindowsFormsApplication1.Calculator
                         w.LvlUp(hero);
                         break;
                 }
-            }
         }
     }
 }

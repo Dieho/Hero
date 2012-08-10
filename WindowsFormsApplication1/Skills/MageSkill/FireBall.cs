@@ -5,16 +5,16 @@ using System.Text;
 using WindowsFormsApplication1.Effects;
 using WindowsFormsApplication1.MonsterType;
 
-namespace WindowsFormsApplication1.Skills.BattleSkill
+namespace WindowsFormsApplication1.Skills.MageSkill
 {
-    class BleedingSting : Skill, IBattleSkill
+    class FireBall:Skill,IMageSkill
     {
         private const short _lvl = 1;
-        private const int _coolDown = 5;
-        private const float _damage = (float)1.5;
+        private const int _coolDown = 7;
+        private float _damage = (float)1.3;
         private float _skillDamage;
-
-        public BleedingSting()
+        private Eff _skillEffect = new Bleeding();
+        public FireBall()
         {
             base.CoolDown = _coolDown;
         }
@@ -54,7 +54,7 @@ namespace WindowsFormsApplication1.Skills.BattleSkill
         public float Damage
         {
             get { return _damage; }
-           // set { _damage = value; }
+            set { _damage = value; }
         }
 
         public float SkillDamage(ILive you)
@@ -63,19 +63,18 @@ namespace WindowsFormsApplication1.Skills.BattleSkill
             return _skillDamage;
         }
 
-        //public Eff SkillEffect
-        //{
-        //    get { return _skillEffect; } 
-        //    set { _skillEffect = value as Bleeding; }
-        //}
+        public Eff SkillEffect
+        {
+            get { return _skillEffect; } 
+            set { _skillEffect = value; }
+        }
 
         public float Smash(ILive you, ILive victim)
         {
             SkillDamage(you);
-            victim.effects.Add(new Bleeding());
+            var a = SkillEffect;
+            victim.effects.Add(a);
             return _skillDamage;
         }
-
-
     }
 }

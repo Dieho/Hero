@@ -6,6 +6,7 @@ using WindowsFormsApplication1.Batle;
 using WindowsFormsApplication1.Calculator;
 using WindowsFormsApplication1.Effects;
 using WindowsFormsApplication1.MonsterType;
+using WindowsFormsApplication1.Skills;
 using WindowsFormsApplication1.Skills.BattleSkill;
 
 namespace WindowsFormsApplication1
@@ -29,7 +30,7 @@ namespace WindowsFormsApplication1
 
         private void Button4Click(object sender, EventArgs e)
         {
-            var w = new Warrior().Build(Experience:99,bskill:new BleedingSting());
+            var w = new Warrior().Build(Experience: 99, bskill: new BleedingSting());
             NewFight(w);
         }
 
@@ -82,15 +83,25 @@ namespace WindowsFormsApplication1
                 asd.LvlUp(_hero1);
                 button1.Enabled = false;
             }
-            //if (_hero1.skillInUse.Blee)
-            foreach (var i in _hero1.skillInUse)
+            if (_hero1 != null)
             {
-                if (i.Name=="BleedingSting")
+                if (_hero1.skillInUse.Count == 0)
                 {
-                    if (i.IsCooled)
-                        button9.Enabled = true;
+                    button9.Enabled = true;
+                }
+                else
+                {
+                    foreach (var i in _hero1.skillInUse)
+                    {
+                        if (i.Name == "BleedingSting")
+                        {
+                            if (i.IsCooled)
+                                button9.Enabled = true;
+                        }
+                    }
                 }
             }
+
         }
 
 
@@ -157,27 +168,36 @@ namespace WindowsFormsApplication1
 
         private void button9_Click(object sender, EventArgs e)
         {
-            BleedingSting b=new BleedingSting();
-            var f = new Fight();
-            string result = f.Kick(_hero1, _hero2, b);
-            richTextBox1.Text = richTextBox1.Text + _hero1.Name + " - " + _hero1.HPCurent.ToString() + " - " +
-                                _hero2.Name + " " + _hero2.HPCurent.ToString() + "\n" + result + " \n";
-            if (_hero1.HPCurent == 0)
+            foreach (Skill i in _hero1.battleSkills)
             {
-                _hero1 = null;
+                if (i.Name == "BleedingSting")
+                {
+                    var f = new Fight();
+                    string result = f.Kick(_hero1, _hero2, i as IBattleSkill);
+                    richTextBox1.Text = richTextBox1.Text + _hero1.Name + " - " + _hero1.HPCurent.ToString() + " - " +
+                                        _hero2.Name + " " + _hero2.HPCurent.ToString() + "\n" + result + " \n";
+                    if (_hero1.HPCurent == 0)
+                    {
+                        _hero1 = null;
 
-                button1.Enabled = false;
-                button8.Enabled = false;
-            }
-            if (_hero2.HPCurent == 0)
-            {
-                _hero2 = null;
-                var asd = new BatleCalculates();
-                asd.LvlUp(_hero1);
-                button1.Enabled = false;
-            }
+                        button1.Enabled = false;
+                        button8.Enabled = false;
+                    }
+                    if (_hero2.HPCurent == 0)
+                    {
+                        _hero2 = null;
+                        var asd = new BatleCalculates();
+                        asd.LvlUp(_hero1);
+                        button1.Enabled = false;
+                    }
 
-            button9.Enabled = false;
+                    button9.Enabled = false;
+                }
+                else
+                {
+                    MessageBox.Show("You have not this skill!");
+                }
+            }
 
         }
     }

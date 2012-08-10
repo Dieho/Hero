@@ -8,7 +8,12 @@ namespace WindowsFormsApplication1.Effects
 {
     class Bleeding : Eff
     {
-        private int _time = 10;
+        private int _time;
+
+        public Bleeding()
+        {
+            _time = 10;
+        } 
 
         public int Time
         {
@@ -16,25 +21,25 @@ namespace WindowsFormsApplication1.Effects
             set { _time = value; }
         }
 
-        void Eff.Go(ILive victim)
+       public void Go(ILive victim, int i)
         {
-            if (Time > 0)
+            if (victim.effects[i].Time > 0)
             {
                 victim.HPCurent -= (float)0.3;
-                Time -= 1;
+                victim.effects[i].Time -= 1;
                 
             }
             else
             {
-                foreach (var i in victim.effects)
-                {
-                    if (i.Time<=0)
-                    {
-                        victim.effects.Remove(i);
-                        break;
-                    }
-                }
-            }
+                //foreach (var j in victim.effects)
+                //{
+                //    if (j.Time<=0)
+                //    {
+                victim.effects.RemoveAt(i);
+                //    break;
+                //}
+            //}
+        }
         }
 
     }

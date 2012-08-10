@@ -9,6 +9,6 @@ namespace WindowsFormsApplication1.Effects
     public interface Eff
     {
         int Time { get; set; }
-        void Go(ILive victim);
+        void Go(ILive victim,int i);
     }
 }

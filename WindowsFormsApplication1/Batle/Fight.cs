@@ -10,23 +10,8 @@ using WindowsFormsApplication1.Skills.BattleSkill;
 
 namespace WindowsFormsApplication1.Batle
 {
-    class Fight : IBatle
+    class Fight
     {
-        private ILive _first;
-        private ILive _second;
-
-        public ILive First
-        {
-            get { return _first; }
-            set { _first = value; }
-        }
-
-        public ILive Second
-        {
-            get { return _second; }
-            set { _second = value; }
-        }
-
         public string Kick(ILive first, ILive second, IBattleSkill skill = null)
         {
 
@@ -82,39 +67,28 @@ namespace WindowsFormsApplication1.Batle
 
         public void GoEffect(ILive first, ILive second)
         {
-            if (first.effects.Count != 0)
+            for (int i = 0; i < first.effects.Count; i++)
             {
-                foreach (var i in first.effects)
-                {
-
-                    i.Go(first);
-                }
+                first.effects[i].Go(first,i);
             }
 
-            if (second.effects.Count != 0)
+            for (int i = 0; i < second.effects.Count; i++)
             {
-                foreach (var i in second.effects)
-                {
-                    i.Go(second);
-                }
+                second.effects[i].Go(second,i);
             }
 
-            if (first.skillInUse.Count != 0)
+            for (int i = 0; i < first.skillInUse.Count; i++)
             {
-                foreach (var i in first.skillInUse)
-                {
-                    i.ToCollDown();// i.Go(first);
+                first.skillInUse[i].ToCollDown(first);
 
-                }
             }
 
-            if (second.skillInUse.Count != 0)
+            for (int i = 0; i < second.skillInUse.Count; i++)
             {
-                foreach (var i in second.skillInUse)
-                {
-                    i.ToCollDown();//  i.Go(second);
-                }
+                second.skillInUse[i].ToCollDown(second);
+
             }
+
         }
 
     }
