@@ -19,6 +19,11 @@ namespace WindowsFormsApplication1.Skills.BattleSkill
             base.CoolDown = _coolDown;
         }
 
+        public override string ToString()
+        {
+            return "BleedingSting";
+        }
+
         public override int RollBack
         {
             get

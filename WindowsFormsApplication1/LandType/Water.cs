@@ -7,11 +7,22 @@ namespace WindowsFormsApplication1.LandType
 {
     public class Water : ILand
     {
-        public string Name { get; set; }
+        private bool _passability;
+        private const string _name="Water";
+        public string Name
+        {
+            get { return _name; }
+        }
+
+        public bool Passability
+        {
+            get { return _passability; }
+            set { _passability = value; }
+        }
 
         public override string ToString()
         {
-            return "Вода";
+            return "Water";
         }
     }
 }

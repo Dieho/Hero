@@ -9,17 +9,13 @@ namespace WindowsFormsApplication1.Skills
 {
     public abstract class  Skill
     {
-        private string _name;
         private bool isCooled;
         private int _cooldown;
-        private short _lvl;
         private int _rollBack;
 
         #region virtual methods
-        public virtual string Name
-        {
-            get { return _name; }
-        }
+        public virtual string Name { get; set; }
+
 
         public virtual int CoolDown
         {
@@ -29,7 +25,7 @@ namespace WindowsFormsApplication1.Skills
 
         public virtual short Lvl
         {
-            get { return _lvl; }
+            get; set;
         }
 
         public virtual int RollBack

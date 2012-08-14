@@ -12,7 +12,6 @@ namespace WindowsFormsApplication1.MonsterType
     {
         private string name; 
         private string agression;
-        private HeroBuilder.Stat stat;
 
         public string Name
         {

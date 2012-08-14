@@ -148,7 +148,14 @@ namespace WindowsFormsApplication1
             {
                 for (int j = 0; j < 10; j++)
                 {
-                    sb.Append(string.Format("{0}\t", part[i, j]));
+                    if (_hero1.mapPosition.X == i && _hero1.mapPosition.Y == j)
+                    {
+                        sb.Append(string.Format("{0}\t", 1));
+                    }
+                    else
+                    {
+                        sb.Append(string.Format("{0}\t", part[i, j]));
+                    }
                 }
                 sb.Append("\n");
             }

@@ -21,6 +21,11 @@ namespace WindowsFormsApplication1.Effects
             set { _time = value; }
         }
 
+        public override string ToString()
+        {
+            return "Burning";
+        }
+
         public void Go(ILive victim, int i)
         {
             if (victim.effects[i].Time > 0)

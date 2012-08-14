@@ -65,6 +65,7 @@
     <Compile Include="MonsterType\Monster.cs" />
     <Compile Include="MonsterType\Warrior.cs" />
     <Compile Include="MonsterType\Wizard.cs" />
+    <Compile Include="Movement\Movement.cs" />
     <Compile Include="Skills\BattleSkill\BattleSkillEnum.cs" />
     <Compile Include="Skills\BattleSkill\BleedingSting.cs" />
     <Compile Include="Skills\ISkill.cs" />

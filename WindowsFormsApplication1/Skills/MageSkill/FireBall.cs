@@ -19,6 +19,11 @@ namespace WindowsFormsApplication1.Skills.MageSkill
             base.CoolDown = _coolDown;
         }
 
+        public override string ToString()
+        {
+            return "FireBall";
+        }
+
         public override int RollBack
         {
             get
