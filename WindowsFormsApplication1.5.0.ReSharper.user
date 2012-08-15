@@ -9,62 +9,67 @@
   </SettingsComponent>
   <RecentFiles>
     <RecentFiles>
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Batle/f:IBatle.cs" caret="285" fromTop="10" />
       <File id="120345C2-565B-4D57-AD24-45962E232B20/f:HeroBuilder.cs" caret="349" fromTop="10" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:LandType/f:ILand.cs" caret="154" fromTop="6" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:LandType/f:Mountain.cs" caret="0" fromTop="0" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:LandType/f:Water.cs" caret="0" fromTop="0" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:LandType/f:Ground.cs" caret="0" fromTop="0" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Generator/f:WorldGenerator.cs" caret="134" fromTop="6" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Generator/f:Generator.cs" caret="990" fromTop="22" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:LandType/f:MapPart.cs" caret="496" fromTop="19" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:LandType/f:WorldMap.cs" caret="512" fromTop="14" />
       <File id="120345C2-565B-4D57-AD24-45962E232B20/f:StartForm.Designer.cs" caret="0" fromTop="0" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:Wizard.cs" caret="129" fromTop="3" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:Hero.cs" caret="4116" fromTop="30" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:Monster.cs" caret="3136" fromTop="19" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Calculator/f:BatleCalculates.cs" caret="4586" fromTop="23" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:Warrior.cs" caret="846" fromTop="19" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Effects/f:Eff.cs" caret="247" fromTop="9" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/f:StartForm.cs" caret="720" fromTop="0" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Effects/f:Bleeding.cs" caret="430" fromTop="19" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:DD.cs" caret="182" fromTop="6" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Skills/d:BattleSkill/f:BleedingSting.cs" caret="513" fromTop="9" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Skills/f:ISkill.cs" caret="519" fromTop="16" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Batle/f:Fight.cs" caret="3327" fromTop="28" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:ILive.cs" caret="926" fromTop="27" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:ILive.cs" caret="414" fromTop="8" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Batle/f:IBatle.cs" caret="215" fromTop="9" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Calculator/f:BatleCalculates.cs" caret="4573" fromTop="18" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Effects/f:Eff.cs" caret="283" fromTop="10" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Skills/d:MageSkill/f:MageSkillEnum.cs" caret="230" fromTop="8" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Skills/d:BattleSkill/f:BattleSkillEnum.cs" caret="415" fromTop="12" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:LandType/f:MapPart.cs" caret="1671" fromTop="22" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:LandType/f:WorldMap.cs" caret="525" fromTop="6" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Movement/f:Movement.cs" caret="997" fromTop="25" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Generator/f:WorldGenerator.cs" caret="134" fromTop="6" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Generator/f:Generator.cs" caret="990" fromTop="28" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:Hero.cs" caret="802" fromTop="25" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Effects/f:Bleeding.cs" caret="321" fromTop="15" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:Wizard.cs" caret="205" fromTop="7" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:Warrior.cs" caret="348" fromTop="8" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Batle/f:Fight.cs" caret="2847" fromTop="87" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Effects/f:burning.cs" caret="523" fromTop="21" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:DD.cs" caret="250" fromTop="10" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Skills/d:MageSkill/f:FireBall.cs" caret="538" fromTop="0" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Skills/d:BattleSkill/f:BleedingSting.cs" caret="0" fromTop="0" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Skills/f:ISkill.cs" caret="359" fromTop="12" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:Monster.cs" caret="3307" fromTop="120" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:LandType/f:ILand.cs" caret="418" fromTop="15" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:LandType/f:Water.cs" caret="297" fromTop="10" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:LandType/f:Mountain.cs" caret="645" fromTop="14" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:LandType/f:Ground.cs" caret="533" fromTop="10" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/f:StartForm.cs" caret="4844" fromTop="14" />
     </RecentFiles>
     <RecentEdits>
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:Hero.cs" caret="933" fromTop="27" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:Hero.cs" caret="3204" fromTop="21" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:Hero.cs" caret="3486" fromTop="28" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:Hero.cs" caret="4158" fromTop="34" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:Warrior.cs" caret="767" fromTop="14" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Calculator/f:BatleCalculates.cs" caret="4543" fromTop="22" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:Monster.cs" caret="264" fromTop="9" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:Warrior.cs" caret="859" fromTop="20" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Skills/d:BattleSkill/f:BleedingSting.cs" caret="1594" fromTop="27" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Skills/d:BattleSkill/f:BleedingSting.cs" caret="1594" fromTop="34" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Skills/d:BattleSkill/f:BleedingSting.cs" caret="1594" fromTop="13" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Skills/d:BattleSkill/f:BleedingSting.cs" caret="982" fromTop="35" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Batle/f:Fight.cs" caret="3393" fromTop="39" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Skills/d:BattleSkill/f:BleedingSting.cs" caret="1412" fromTop="27" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/f:StartForm.cs" caret="2458" fromTop="28" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/f:StartForm.cs" caret="813" fromTop="24" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Batle/f:Fight.cs" caret="2938" fromTop="10" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Batle/f:Fight.cs" caret="2938" fromTop="26" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Skills/d:BattleSkill/f:BleedingSting.cs" caret="1267" fromTop="18" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Batle/f:Fight.cs" caret="2938" fromTop="9" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Batle/f:Fight.cs" caret="2738" fromTop="14" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Skills/d:BattleSkill/f:BleedingSting.cs" caret="254" fromTop="8" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Batle/f:Fight.cs" caret="2989" fromTop="6" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Skills/d:BattleSkill/f:BleedingSting.cs" caret="1580" fromTop="21" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Skills/d:BattleSkill/f:BleedingSting.cs" caret="1629" fromTop="25" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Skills/d:BattleSkill/f:BleedingSting.cs" caret="1387" fromTop="12" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Skills/d:BattleSkill/f:BleedingSting.cs" caret="513" fromTop="9" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Skills/f:ISkill.cs" caret="519" fromTop="16" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Batle/f:Fight.cs" caret="3078" fromTop="19" />
-      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Batle/f:Fight.cs" caret="3305" fromTop="27" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Generator/f:WorldGenerator.cs" caret="134" fromTop="6" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Movement/f:Movement.cs" caret="156" fromTop="4" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Movement/f:Movement.cs" caret="508" fromTop="15" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Movement/f:Movement.cs" caret="584" fromTop="17" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Movement/f:Movement.cs" caret="813" fromTop="22" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Movement/f:Movement.cs" caret="1158" fromTop="28" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Skills/d:BattleSkill/f:BleedingSting.cs" caret="644" fromTop="16" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Effects/f:Bleeding.cs" caret="517" fromTop="24" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:Wizard.cs" caret="309" fromTop="10" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:Wizard.cs" caret="294" fromTop="11" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:Warrior.cs" caret="388" fromTop="10" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:DD.cs" caret="326" fromTop="12" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Effects/f:burning.cs" caret="521" fromTop="21" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Skills/d:MageSkill/f:FireBall.cs" caret="624" fromTop="16" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:LandType/f:Water.cs" caret="371" fromTop="8" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:LandType/f:Water.cs" caret="511" fromTop="15" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:LandType/f:Water.cs" caret="959" fromTop="20" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:LandType/f:Ground.cs" caret="971" fromTop="23" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:LandType/f:Mountain.cs" caret="977" fromTop="23" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Skills/f:ISkill.cs" caret="442" fromTop="14" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Skills/f:ISkill.cs" caret="656" fromTop="25" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:Skills/f:ISkill.cs" caret="263" fromTop="9" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:MonsterType/f:Monster.cs" caret="343" fromTop="12" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/f:StartForm.cs" caret="5156" fromTop="27" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/f:StartForm.cs" caret="4902" fromTop="14" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:LandType/f:ILand.cs" caret="561" fromTop="21" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:LandType/f:ILand.cs" caret="333" fromTop="12" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:LandType/f:Water.cs" caret="202" fromTop="7" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:LandType/f:Mountain.cs" caret="205" fromTop="7" />
+      <File id="120345C2-565B-4D57-AD24-45962E232B20/d:LandType/f:Ground.cs" caret="203" fromTop="7" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -81,44 +86,44 @@
   <CompletionStatisticsManager>
     <ItemStatistics item="Default">
       <Item value="Drawing2D" priority="0" />
-      <Item value="private" priority="19" />
-      <Item value="int" priority="53" />
-      <Item value="public" priority="28" />
+      <Item value="private" priority="25" />
+      <Item value="int" priority="59" />
+      <Item value="public" priority="46" />
       <Item value="HeroBuilder`0" priority="21" />
       <Item value="struct" priority="2" />
       <Item value="HeroStat`0" priority="7" />
       <Item value="switch" priority="3" />
       <Item value="case" priority="6" />
       <Item value="type" priority="0" />
-      <Item value="static" priority="3" />
-      <Item value="break" priority="7" />
-      <Item value="return" priority="35" />
+      <Item value="static" priority="4" />
+      <Item value="break" priority="8" />
+      <Item value="return" priority="42" />
       <Item value="MP" priority="0" />
       <Item value="Damage" priority="0" />
       <Item value="Def" priority="2" />
       <Item value="EnvironmentVariableTarget`0" priority="2" />
       <Item value="panel1" priority="1" />
-      <Item value="false" priority="6" />
-      <Item value="if" priority="24" />
-      <Item value="hero" priority="14" />
+      <Item value="false" priority="7" />
+      <Item value="if" priority="33" />
+      <Item value="hero" priority="18" />
       <Item value="null" priority="3" />
-      <Item value="else" priority="8" />
+      <Item value="else" priority="10" />
       <Item value="panel2" priority="0" />
-      <Item value="true" priority="7" />
+      <Item value="true" priority="11" />
       <Item value="IWorldGenerator`0" priority="9" />
       <Item value="set" priority="0" />
       <Item value="Random`0" priority="3" />
       <Item value="MonsterGenerator`0" priority="0" />
-      <Item value="interface" priority="4" />
+      <Item value="interface" priority="5" />
       <Item value="STAThreadAttribute`0" priority="0" />
       <Item value="AppDomainSetup`0" priority="0" />
       <Item value="String`0" priority="1" />
-      <Item value="string" priority="11" />
-      <Item value="ILive`0" priority="27" />
-      <Item value="void" priority="17" />
-      <Item value="new" priority="50" />
+      <Item value="string" priority="15" />
+      <Item value="ILive`0" priority="31" />
+      <Item value="void" priority="19" />
+      <Item value="new" priority="53" />
       <Item value="MonsterType" priority="1" />
-      <Item value="this" priority="3" />
+      <Item value="this" priority="5" />
       <Item value="MonsterPosition" priority="1" />
       <Item value="var" priority="16" />
       <Item value="Generator" priority="1" />
@@ -128,7 +133,7 @@
       <Item value="Clone`0" priority="0" />
       <Item value="Name" priority="1" />
       <Item value="name" priority="1" />
-      <Item value="value" priority="12" />
+      <Item value="value" priority="16" />
       <Item value="stat" priority="2" />
       <Item value="agression" priority="3" />
       <Item value="Monster`0" priority="2" />
@@ -137,17 +142,17 @@
       <Item value="b" priority="7" />
       <Item value="Agression" priority="0" />
       <Item value="c" priority="0" />
-      <Item value="MessageBox`0" priority="0" />
+      <Item value="MessageBox`0" priority="1" />
       <Item value="asd" priority="15" />
-      <Item value="List" priority="4" />
+      <Item value="List" priority="6" />
       <Item value="List&lt;Stat&gt;" priority="0" />
       <Item value="Live" priority="2" />
       <Item value="Dictionary" priority="0" />
       <Item value="Dictionary&lt;string,Stat&gt;" priority="0" />
-      <Item value="class" priority="0" />
+      <Item value="class" priority="2" />
       <Item value="LandType" priority="0" />
       <Item value="ILand`0" priority="3" />
-      <Item value="_name" priority="3" />
+      <Item value="_name" priority="5" />
       <Item value="land`0" priority="0" />
       <Item value="Land`0" priority="4" />
       <Item value="Mountain`0" priority="0" />
@@ -155,7 +160,7 @@
       <Item value="CreateLand`0" priority="0" />
       <Item value="Land" priority="0" />
       <Item value="_hero" priority="0" />
-      <Item value="protected" priority="10" />
+      <Item value="protected" priority="11" />
       <Item value="_stat" priority="2" />
       <Item value="HeroDefender`0" priority="5" />
       <Item value="_agression" priority="0" />
@@ -176,7 +181,7 @@
       <Item value="richTextBox1" priority="9" />
       <Item value="_second" priority="1" />
       <Item value="hero3" priority="0" />
-      <Item value="first" priority="6" />
+      <Item value="first" priority="7" />
       <Item value="Random" priority="1" />
       <Item value="rand" priority="1" />
       <Item value="float" priority="7" />
@@ -185,14 +190,14 @@
       <Item value="chance" priority="0" />
       <Item value="#endregion" priority="2" />
       <Item value="Generate`0" priority="0" />
-      <Item value="second" priority="4" />
+      <Item value="second" priority="5" />
       <Item value="_experience" priority="0" />
       <Item value="experience" priority="0" />
-      <Item value="short" priority="0" />
+      <Item value="short" priority="1" />
       <Item value="_Lvl" priority="1" />
       <Item value="Lvl" priority="7" />
-      <Item value="for" priority="2" />
-      <Item value="i" priority="6" />
+      <Item value="for" priority="3" />
+      <Item value="i" priority="16" />
       <Item value="Console`0" priority="0" />
       <Item value="_experienceToLvl" priority="0" />
       <Item value="Hero`0" priority="4" />
@@ -223,7 +228,7 @@
       <Item value="_location" priority="1" />
       <Item value="mapPosition" priority="0" />
       <Item value="_mapPosition" priority="2" />
-      <Item value="Point" priority="1" />
+      <Item value="Point" priority="2" />
       <Item value="loc" priority="0" />
       <Item value="map" priority="0" />
       <Item value="location" priority="1" />
@@ -242,25 +247,25 @@
       <Item value="wi" priority="0" />
       <Item value="ThreadStaticAttribute`0" priority="0" />
       <Item value="batleRandom" priority="0" />
-      <Item value="IBattleSkill`0" priority="4" />
+      <Item value="IBattleSkill`0" priority="6" />
       <Item value="_lvl" priority="1" />
-      <Item value="you" priority="1" />
+      <Item value="you" priority="6" />
       <Item value="Convert`0" priority="0" />
       <Item value="sDamage" priority="0" />
       <Item value="double" priority="0" />
       <Item value="IList" priority="0" />
-      <Item value="victim" priority="3" />
-      <Item value="Eff`0" priority="2" />
-      <Item value="_time" priority="0" />
+      <Item value="victim" priority="5" />
+      <Item value="Eff`0" priority="3" />
+      <Item value="_time" priority="1" />
       <Item value="Time" priority="1" />
-      <Item value="Effects" priority="2" />
+      <Item value="Effects" priority="3" />
       <Item value="_effects" priority="3" />
-      <Item value="Bleeding`0" priority="6" />
+      <Item value="Bleeding`0" priority="9" />
       <Item value="effect" priority="2" />
       <Item value="w" priority="2" />
       <Item value="Version`0" priority="0" />
       <Item value="Bleeding" priority="2" />
-      <Item value="foreach" priority="1" />
+      <Item value="foreach" priority="5" />
       <Item value="EventHandler`0" priority="0" />
       <Item value="object" priority="1" />
       <Item value="eff" priority="0" />
@@ -272,22 +277,49 @@
       <Item value="BleedingSting" priority="2" />
       <Item value="_hero2" priority="1" />
       <Item value="StartForm`0" priority="0" />
-      <Item value="skill" priority="3" />
-      <Item value="button9" priority="1" />
-      <Item value="BleedingSting`0" priority="2" />
+      <Item value="skill" priority="4" />
+      <Item value="button9" priority="2" />
+      <Item value="BleedingSting`0" priority="10" />
       <Item value="List&lt;IBattleSkill&gt;" priority="0" />
       <Item value="_battleSkills" priority="0" />
       <Item value="bskill" priority="1" />
       <Item value="_skillDamage" priority="1" />
       <Item value="SkillDamage`0" priority="0" />
-      <Item value="SkillEffect" priority="0" />
+      <Item value="SkillEffect" priority="1" />
       <Item value="_skillEffect" priority="0" />
       <Item value="_toCollDown" priority="2" />
-      <Item value="bool" priority="2" />
+      <Item value="bool" priority="6" />
       <Item value="isCooled" priority="1" />
       <Item value="CoolDown" priority="2" />
       <Item value="_isUsed" priority="1" />
       <Item value="isUsed" priority="0" />
+      <Item value="abstract" priority="1" />
+      <Item value="List&lt;Skill&gt;" priority="0" />
+      <Item value="_skillInUse" priority="2" />
+      <Item value="skillInUse" priority="1" />
+      <Item value="Skill`0" priority="4" />
+      <Item value="as" priority="3" />
+      <Item value="_hero1" priority="4" />
+      <Item value="override" priority="9" />
+      <Item value="virtual" priority="2" />
+      <Item value="_cooldown" priority="3" />
+      <Item value="base" priority="0" />
+      <Item value="bufferCoolDown" priority="1" />
+      <Item value="_rollBack" priority="0" />
+      <Item value="enum" priority="0" />
+      <Item value="long" priority="0" />
+      <Item value="Skills" priority="1" />
+      <Item value="DescriptionAttribute`0" priority="0" />
+      <Item value="BattleSkillEnum`0" priority="0" />
+      <Item value="IMageSkill`0" priority="0" />
+      <Item value="burning`0" priority="0" />
+      <Item value="FireBall`0" priority="0" />
+      <Item value="arrea" priority="0" />
+      <Item value="Length" priority="0" />
+      <Item value="using" priority="0" />
+      <Item value="System" priority="0" />
+      <Item value="Math`0" priority="0" />
+      <Item value="_passability" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@WindowsFormsApplication1.HeroBuilder">
       <Item value="Builder`0" priority="4" />
@@ -309,10 +341,11 @@
       <Item value="Stat" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
-      <Item value="Add`0" priority="5" />
+      <Item value="Add`0" priority="8" />
       <Item value="FindIndex`0" priority="0" />
-      <Item value="Remove`0" priority="0" />
-      <Item value="Count" priority="0" />
+      <Item value="Remove`0" priority="1" />
+      <Item value="Count" priority="3" />
+      <Item value="RemoveAt`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Generic.Dictionary`2">
       <Item value="Add`0" priority="0" />
@@ -337,14 +370,16 @@
       <Item value="Damage" priority="1" />
       <Item value="Def" priority="0" />
       <Item value="Name" priority="2" />
-      <Item value="Type" priority="2" />
+      <Item value="Type" priority="3" />
       <Item value="HPCurent" priority="2" />
       <Item value="experience" priority="2" />
       <Item value="experienceToLvl" priority="2" />
-      <Item value="Lvl" priority="1" />
+      <Item value="Lvl" priority="2" />
       <Item value="DamageCurent" priority="1" />
-      <Item value="effects" priority="6" />
-      <Item value="battleSkills" priority="4" />
+      <Item value="effects" priority="8" />
+      <Item value="battleSkills" priority="7" />
+      <Item value="skillInUse" priority="10" />
+      <Item value="mapPosition" priority="4" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:WindowsFormsApplication1.Batle.Fight">
       <Item value="First" priority="0" />
@@ -355,7 +390,7 @@
       <Item value="Clear`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Int32">
-      <Item value="ToString`0" priority="7" />
+      <Item value="ToString`0" priority="8" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Random">
       <Item value="NextDouble`0" priority="1" />
@@ -394,10 +429,11 @@
       <Item value="Now" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Windows.Forms.Button">
-      <Item value="Enabled" priority="2" />
+      <Item value="Enabled" priority="3" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Drawing.Point">
-      <Item value="X" priority="1" />
+      <Item value="X" priority="4" />
+      <Item value="Y" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:WindowsFormsApplication1.MonsterType.Warrior">
       <Item value="Build`0" priority="1" />
@@ -415,8 +451,8 @@
       <Item value="Sleep`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:WindowsFormsApplication1.Effects.Eff">
-      <Item value="Go`0" priority="1" />
-      <Item value="Time" priority="0" />
+      <Item value="Go`0" priority="2" />
+      <Item value="Time" priority="2" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:WindowsFormsApplication1.Skills.BattleSkill.BleedingSting">
       <Item value="Smash`0" priority="0" />
@@ -427,6 +463,23 @@
       <Item value="Smash`0" priority="0" />
       <Item value="ToCollDown`0" priority="0" />
       <Item value="isUsed" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WindowsFormsApplication1.Skills.Skill">
+      <Item value="ToCollDown`0" priority="1" />
+      <Item value="Name" priority="0" />
+      <Item value="IsCooled" priority="0" />
+      <Item value="CoolDown" priority="0" />
+      <Item value="_name" priority="1" />
+      <Item value="SkillCondition`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.MessageBox">
+      <Item value="Show`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WindowsFormsApplication1.Effects.Bleeding">
+      <Item value="Time" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Math">
+      <Item value="Sqrt`0" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>

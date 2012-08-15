@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using WindowsFormsApplication1.MonsterType;
 
 namespace WindowsFormsApplication1.LandType
 {
@@ -18,6 +19,18 @@ namespace WindowsFormsApplication1.LandType
         {
             get { return _passability; }
             set { _passability = value; }
+        }
+
+        public ILandObject LandObject
+        {
+            get { throw new NotImplementedException(); }
+            set { throw new NotImplementedException(); }
+        }
+
+        public ILive LivingBeings
+        {
+            get { throw new NotImplementedException(); }
+            set { throw new NotImplementedException(); }
         }
 
         public override string ToString()
