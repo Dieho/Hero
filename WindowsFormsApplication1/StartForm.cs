@@ -5,6 +5,7 @@ using System.Windows.Forms;
 using WindowsFormsApplication1.Batle;
 using WindowsFormsApplication1.Calculator;
 using WindowsFormsApplication1.Effects;
+using WindowsFormsApplication1.LandType;
 using WindowsFormsApplication1.MonsterType;
 using WindowsFormsApplication1.Skills;
 using WindowsFormsApplication1.Skills.BattleSkill;
@@ -107,7 +108,8 @@ namespace WindowsFormsApplication1
 
         private void Button2Click(object sender, EventArgs e)
         {
-            GenerateWorld();
+            //GenerateWorld();
+            GenerateRegion();
         }
 
         public void GenerateWorld()
@@ -136,6 +138,32 @@ namespace WindowsFormsApplication1
             button3.Enabled = true;
         }
 
+        public void GenerateRegion()
+        {
+            var region = new MapRegion();
+            //GenerateMapRegion
+            var innerMap = region.GenerateMapRegion();
+
+            var sb = new StringBuilder("Карта (Суша-Вода-Горы)\n");
+
+            for (int i = 0; i < region.Height; i++)
+            {
+                for (int j = 0; j < region.Width; j++)
+                {
+                    sb.Append("\t" + innerMap[i, j]);
+                }
+                sb.Append("\n");
+            }
+
+            richTextBox1.Text += sb.ToString();
+            comboBox1.DataSource = Enumerable.Range(0, Convert.ToInt32(tbColumns.Text)).ToList();
+            comboBox2.DataSource = Enumerable.Range(0, Convert.ToInt32(tbLines.Text)).ToList();
+
+            comboBox1.Enabled = true;
+            comboBox2.Enabled = true;
+            //button3.Enabled = true;
+        }
+
 
         private void Button3Click(object sender, EventArgs e)
         {
@@ -148,7 +176,7 @@ namespace WindowsFormsApplication1
             {
                 for (int j = 0; j < 10; j++)
                 {
-                    if (_hero1.mapPosition.X == i && _hero1.mapPosition.Y == j)
+                    if (_hero1!=null&&_hero1.mapPosition.X == i && _hero1.mapPosition.Y == j)
                     {
                         sb.Append(string.Format("{0}\t", 1));
                     }

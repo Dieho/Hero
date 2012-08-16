@@ -56,6 +56,7 @@
     <Compile Include="LandType\Ground.cs" />
     <Compile Include="LandType\ILand.cs" />
     <Compile Include="LandType\MapPart.cs" />
+    <Compile Include="LandType\MapRegion.cs" />
     <Compile Include="LandType\Mountain.cs" />
     <Compile Include="LandType\Water.cs" />
     <Compile Include="LandType\WorldMap.cs" />
