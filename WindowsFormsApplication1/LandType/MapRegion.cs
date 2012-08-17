@@ -9,17 +9,21 @@ namespace WindowsFormsApplication1.LandType
     public class MapRegion
     {
         //private String _regionName;
+        private readonly int _width;
+        private readonly int _height;
+
         public int Water { get; set; }
         public int Mountain { get; set; }
         public int Ground { get; set; }
         public String RegionName { get; set; }
-        
-        public int Width { get { return 10; } }
-        public int Height { get { return 10; } }
 
-        public MapRegion()
+        public int Width { get { return _width; } }
+        public int Height { get { return _height; } }
+
+        public MapRegion(int width, int height)
         {
-            Water = 100;            
+            _width = width;
+            _height = height;
         }
 
         private ILand[,] _innerMap;
@@ -28,57 +32,58 @@ namespace WindowsFormsApplication1.LandType
         {
             if (_innerMap == null)
             {
-                _innerMap = new ILand[Height, Width];
+                _innerMap = new ILand[_height, _width];
 
-                for (int i = 0; i < Height; i++)
-                    for (int j = 0; j < Width; j++)
+                for (int i = 0; i < _height; i++)
+                    for (int j = 0; j < _width; j++)
                     {
                         _innerMap[i, j] = new Water();
                     }
             }
         }
 
-        private ILand[,] CreateNewLayout(String landType)
+        private ILand[,] CreateNewLayout(String landType, String baseLandType, int landSquare)
         {
-            int groundSquare = Generator.Generator.GenerateRandomValue(40, 99);
+            //int groundSquare = Generator.Generator.GenerateRandomValue(40, _width * _height - 1);
             const int groundC = 10;
             var map = new String [groundC];
             if (_innerMap != null)
             {
                 for (int i = 0; i < groundC; i++)
                 {
-                    int positionX = Generator.Generator.GenerateRandomValue(0, Width);
-                    int positionY = Generator.Generator.GenerateRandomValue(0, Height);
-                    switch (landType)
-                    {
-                        case "Ground":
-                            _innerMap[positionX, positionY] = new Ground();
-                            break;
-                        case "Mountain":
-                            _innerMap[positionX, positionY] = new Mountain();
-                            break;
-                        case "Water":
-                            _innerMap[positionX, positionY] = new Water();
-                            break;
-                    }
+                    int positionX = Generator.Generator.GenerateRandomValue(0, _width);
+                    int positionY = Generator.Generator.GenerateRandomValue(0, _height);
+
+                    if(_innerMap[positionX, positionY].ToString() == baseLandType)
+                        switch (landType)
+                        {
+                            case "Ground":
+                                _innerMap[positionX, positionY] = new Ground();
+                                break;
+                            case "Mountain":
+                                _innerMap[positionX, positionY] = new Mountain();
+                                break;
+                            case "Water":
+                                _innerMap[positionX, positionY] = new Water();
+                                break;
+                        }
                     map[i] = positionX.ToString(CultureInfo.InvariantCulture) + ';' + positionY.ToString(CultureInfo.InvariantCulture);
                 }
             }
-            _innerMap = SmartLayout(_innerMap, map, groundSquare);
+            _innerMap = SmartLayout(_innerMap, map, landType, landSquare);
 
             return _innerMap;
         }
 
-        private ILand[,] SmartLayout(ILand[,] innerMap, String [] map, int groundSquare)
+        private ILand[,] SmartLayout(ILand[,] innerMap, String[] map, String landType, int landSquare)
         {
-            for (int i = 0; i < groundSquare; i++)
+            for (int i = 0; i < landSquare; i++)
             {
                 int position = Generator.Generator.GenerateRandomValue(0, map.Length);
                 string [] sep = map[position].Split(new Char[] { ';' }); 
                 int positionX = int.Parse(sep[0]);
                 int positionY = int.Parse(sep[1]);
-                //if (innerMap[positionX, positionY].ToString() == "Ground")
-                //    continue;
+             
                 switch (position % 4)
                 {
                     case 0:
@@ -86,7 +91,7 @@ namespace WindowsFormsApplication1.LandType
                             positionX -= 1;
                         break;
                     case 1:
-                        if (positionX != 9)
+                        if (positionX != (_width - 1))
                             positionX += 1;
                         break;
                     case 2:
@@ -94,11 +99,25 @@ namespace WindowsFormsApplication1.LandType
                             positionY -= 1;
                         break;
                     case 3:
-                        if (positionY != 9)
+                        if (positionY != (_height - 1))
                             positionY += 1;
                         break;
                 }
-                _innerMap[positionX, positionY] = new Ground();
+
+                if (innerMap[positionX, positionY].ToString() == landType)
+                    continue;
+                switch (landType)
+                {
+                    case "Ground":
+                        _innerMap[positionX, positionY] = new Ground();
+                        break;
+                    case "Mountain":
+                        _innerMap[positionX, positionY] = new Mountain();
+                        break;
+                    case "Water":
+                        _innerMap[positionX, positionY] = new Water();
+                        break;
+                }
                 var buffer = map;
                 map = new string[map.Length + 1];
                 buffer.CopyTo(map, 0);
@@ -113,9 +132,11 @@ namespace WindowsFormsApplication1.LandType
             
             GetDefaultMapFill();
             const string ground = "Ground";
-            var innerMap = CreateNewLayout(ground);
-            //const string moundtain = "Mountain";
-            //CreateNewLayout(moundtain);
+            string baseLandType = "Water";
+            var innerMap = CreateNewLayout(ground, baseLandType, Ground);
+            baseLandType = "Ground";
+            const string moundtain = "Mountain";
+            CreateNewLayout(moundtain, baseLandType, Mountain);
 
             return innerMap;
         }

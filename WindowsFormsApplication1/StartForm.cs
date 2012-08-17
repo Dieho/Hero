@@ -140,8 +140,9 @@ namespace WindowsFormsApplication1
 
         public void GenerateRegion()
         {
-            var region = new MapRegion();
-            //GenerateMapRegion
+            var region = new MapRegion(Convert.ToInt32(tbColumns.Text), Convert.ToInt32(tbLines.Text));
+            region.Ground = int.Parse(textBox1.Text);
+            region.Mountain = int.Parse(textBox2.Text);
             var innerMap = region.GenerateMapRegion();
 
             var sb = new StringBuilder("Карта (Суша-Вода-Горы)\n");
@@ -233,6 +234,11 @@ namespace WindowsFormsApplication1
                     MessageBox.Show("You have not this skill!");
                 }
             }
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
 
         }
     }
